@@ -6,6 +6,10 @@
     transition: 0.3s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: century-gothic, sans-serif;
     font-weight: 400;

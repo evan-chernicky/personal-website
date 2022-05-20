@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <div id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+    <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="bg-white dark:bg-black">
           <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
           <section id="home" className="pb-10">
