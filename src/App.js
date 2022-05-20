@@ -20,8 +20,10 @@ function App() {
 
   return (
     <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
-      <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
-      <Intro />
+      <div className="bg-white dark:bg-black">
+        <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
+        <Intro />
+      </div>
     </div>
   );
 }
