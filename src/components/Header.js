@@ -1,20 +1,34 @@
 import React from 'react'
-import foam from '../assets/foam.svg'
+import LightBulbWhite from '../assets/light-bulb-white.svg'
+import LightBulbBlack from '../assets/light-bulb-black.svg'
 
-function Header() {
 
-//<img className="absolute h-screen w-100 inset-0 m-auto" src={foam} alt="background" />
-
+function Header({setIsDarkMode, isDarkMode}) {
   return (
-    <header className="App-header h-screen flex flex-col justify-center items-center w-100 bg-no-repeat	bg-cover bg-center" style={{backgroundImage: `url(${foam})`}}>
-        <div className="z-10 flex flex-col text-center text-white">
-            <h1 className="text-2xl m-auto mb-6" style={{maxWidth: '60%'}}>
-                Hello, my name is Evan Chernicky.<br/>
-                I am a Washington, DC frontend developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.
-            </h1>
-            <a className="border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#skills">LEARN MORE</a>
-        </div>
-    </header>
+    <div className="flex py-4 justify-between w-10/12 right-0 left-0 m-auto fixed items-center">
+        {isDarkMode ? (
+        <button onClick={() => setIsDarkMode(false)}>
+            <img src={LightBulbWhite} alt="light mode" />
+        </button>
+        ) : (
+        <button onClick={() => setIsDarkMode(true)}>
+            <img src={LightBulbBlack} alt="dark mode" />
+        </button>         
+        )}
+        <nav>
+            <ul className="flex flex-row text-black dark:text-white">
+                <li className="px-3">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li className="px-3">
+                    <a href="#projectes">Projects</a>
+                </li>
+                <li className="px-3">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
   )
 }
 
