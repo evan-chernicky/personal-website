@@ -33,6 +33,19 @@ body {
     width: 20px;
   }
 
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
 @media only screen and (max-width: 976px) {
 .foam {
     background-size: 164vh 250vw;

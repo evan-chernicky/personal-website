@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './App.css';
 import Intro from './components/Intro.js'
 import Header from './components/Header.js'
+import Skills from './components/Skills.js'
 import foam from './assets/foam.svg'
 
 
@@ -38,7 +39,7 @@ function App() {
             <Intro />
           </section>
           <section id="skills">
-            <Intro />
+            <Skills isDarkMode={isDarkMode}/>
           </section>
       </div>
     </div>
