@@ -9,6 +9,7 @@ import foam from './assets/foam.svg'
 function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const html = document.querySelector('html')
 
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -18,10 +19,18 @@ function App() {
     }
   },[])
 
-  console.log(isDarkMode)
+  //set styling for scrollbar based on theme
+  if (isDarkMode) {
+    html.style.setProperty('--scrollbar-background', '#fff')
+    html.style.setProperty('--scrolltrack-background', '#1e1e1e')
+  }
+  else {
+    html.style.setProperty('--scrollbar-background', '#1e1e1e')
+    html.style.setProperty('--scrolltrack-background', '#fff')
+  }
 
   return (
-    <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="bg-white dark:bg-black">
           <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
           <section id="home" className="pb-10">
