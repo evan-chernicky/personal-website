@@ -5,7 +5,7 @@ import LightBulbBlack from '../assets/light-bulb-black.svg'
 
 function Header({setIsDarkMode, isDarkMode}) {
   return (
-    <div className="flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center">
+    <div className="flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10">
         {isDarkMode ? (
         <button onClick={() => setIsDarkMode(false)} style={{width: "50px", height: "50px"}} className="flex justify-center items-center hover:bg-pink rounded-full">
             <img src={LightBulbWhite} alt="light mode" />
@@ -21,7 +21,7 @@ function Header({setIsDarkMode, isDarkMode}) {
                     <a className="hover:text-pink dark:hover:text-blue" href="#skills">Skills</a>
                 </li>
                 <li className="px-3">
-                    <a className="hover:text-pink dark:hover:text-blue" href="#projectes">Projects</a>
+                    <a className="hover:text-pink dark:hover:text-blue" href="#projects">Projects</a>
                 </li>
                 <li className="px-3">
                     <a className="hover:text-pink dark:hover:text-blue" href="#contact">Contact</a>

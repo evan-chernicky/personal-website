@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import './App.css';
 import Intro from './components/Intro.js'
 import Header from './components/Header.js'
+import foam from './assets/foam.svg'
+
 
 
 function App() {
@@ -21,8 +23,14 @@ function App() {
   return (
     <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="bg-white dark:bg-black">
-        <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
-        <Intro />
+          <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
+          <section id="home" className="pb-10">
+            <div className="w-full bg-no-repeat absolute bg-cover bg-center foam" style={{top: "-10vh", height: "120vh", backgroundSize: "200vh 121vh", backgroundImage: `url(${foam})`}}></div>
+            <Intro />
+          </section>
+          <section id="skills">
+            <Intro />
+          </section>
       </div>
     </div>
   );

@@ -1,13 +1,12 @@
 import React from 'react'
-import foam from '../assets/foam.svg'
 
 function Header() {
 
   return (
-    <header className="App-header h-screen flex flex-col justify-center items-center w-100 bg-no-repeat	bg-cover bg-center foam" style={{backgroundImage: `url(${foam})`}}>
+    <header className="App-header h-screen flex flex-col justify-center items-center w-full h-screen">
         <div className="z-10 flex flex-col text-center text-white">
             <h1 className="text-2xl m-auto mb-6" style={{maxWidth: '60%'}}>
-                <span className="text-4xl pb-2">Hello, my name is Evan Chernicky.</span><br/>
+                <span className="text-4xl">Hello, my name is Evan Chernicky.</span><br/>
                 I am a Washington, DC frontend developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.
             </h1>
             <a className="border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#skills">LEARN MORE</a>
