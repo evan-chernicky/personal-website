@@ -501,14 +501,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -530,12 +522,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.bg-cover {
+  background-size: cover;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -551,8 +557,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 body {
   font-family: century-gothic, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media only screen and (max-width: 976px) {
+  .foam {
+    background-size: 164vh 250vw;
+  }
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
