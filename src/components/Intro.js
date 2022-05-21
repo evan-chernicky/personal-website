@@ -1,4 +1,10 @@
 import React from 'react'
+import GitHub from '../assets/socials/github-white.svg'
+import LinkedIn from '../assets/socials/linkedin-white.svg'
+import Medium from '../assets/socials/medium-white.svg'
+import Instagram from '../assets/socials/instagram-white.svg'
+
+
 
 function Header() {
 
@@ -8,7 +14,22 @@ function Header() {
         <div style={{maxWidth: '60%'}} className="m-auto">
           <h1 className="text-4xl mb-3">Hello, my name is <strong>Evan Chernicky</strong>.</h1>
           <h2 className="text-2xl mb-6">I am a Washington, DC frontend developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.</h2>
-          <a className="border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#skills">LEARN MORE</a>
+          <div className="flex flex-row justify-center mb-6">
+            <a className="px-1 hover:scale-95" target="_blank" rel="noreferrer" href="https://github.com/evan-chernicky">
+              <img className="w-8" src={GitHub} alt="GitHub" />
+            </a>
+            <a className="px-1 hover:scale-95" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/echernicky/">
+              <img className="w-8" src={LinkedIn} alt="LinkedIn" />
+            </a>
+            <a className="px-1 hover:scale-95" target="_blank" rel="noreferrer" href="https://medium.com/@echernicky">
+              <img className="w-8" src={Medium} alt="Medium" />
+            </a>
+            <a className="px-1 hover:scale-95" target="_blank" rel="noreferrer" href="https://www.instagram.com/shaken_not_cherned/">
+              <img className="w-8" src={Instagram} alt="Instagram" />
+            </a>
+
+          </div>          
+          <a className="text-xl border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#skills">LEARN MORE</a>
         </div>
         </div>
     </div>
