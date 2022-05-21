@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className="App-header h-screen flex flex-col justify-center items-center w-full h-screen">
         <div className="z-10 flex flex-col text-center text-white">
-        <div style={{maxWidth: '60%'}} className="m-auto">
+        <div style={{maxWidth: '60%'}} className="m-auto text-focus-in">
           <h1 className="text-4xl mb-3">Hello, my name is <strong>Evan Chernicky</strong>.</h1>
           <h2 className="text-2xl mb-6">I am a Washington, DC frontend developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.</h2>
           <div className="flex flex-row justify-center mb-6">

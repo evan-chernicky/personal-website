@@ -34,7 +34,8 @@ function App() {
 
 
   //observes sections and adds visibile class based on what section user is viewing
-  useEffect(() => {  
+  useEffect(() => { 
+    const thresholdSettings = (window.innerWidth >= 540) ? 0.75 : 0.3 //change threshold based on if on phone or not
     const sections = document.querySelectorAll("section")
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -43,7 +44,7 @@ function App() {
         }, 500)
       })
     }, {
-        threshold: 0.75,
+        threshold: thresholdSettings,
         trackVisibility: true,
         delay: 100 //slight delay to account for fast scrolling weirdness
       }
@@ -51,6 +52,7 @@ function App() {
     sections.forEach(section => {
       observer.observe(section)
     })
+
   },[])
 
 

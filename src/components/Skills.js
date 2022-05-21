@@ -7,7 +7,7 @@ function Skills({isDarkMode}) {
     <div className="min-h-screen flex flex-col justify-center items-center text-black dark:text-white">
         <div className="md:m-32 m-10 text-center p-2 rounded-xl border-draw">
             <div className="bg-white dark:bg-black p-6 md:py-14 md:px-24 max-w-screen-xl rounded-xl">
-                <h2 className="text-6xl uppercase tracking-wider">Skills</h2>
+                <h2 className="text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Skills</h2>
                     <div className="flex flex-row flex-wrap pb-12 justify-center">
                         {skills.map(skill => (
                             <div key={skill.name} className="relative flex flex-col justify-center items-center w-12 md:w-20 m-6 cursor-default mt-8 mb-8 md:mb-16">
