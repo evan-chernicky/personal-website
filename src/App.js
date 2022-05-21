@@ -4,7 +4,9 @@ import Intro from './components/Intro.js'
 import Header from './components/Header.js'
 import Skills from './components/Skills.js'
 import Projects from './components/Projects.js'
-import foam from './assets/foam.svg'
+import DownArrowBlack from './assets/down-arrow-black.svg'
+import DownArrowWhite from './assets/down-arrow-white.svg'
+
 
 
 
@@ -35,18 +37,20 @@ function App() {
 
   //observes sections and adds visibile class based on what section user is viewing
   useEffect(() => { 
-    const thresholdSettings = (window.innerWidth >= 540) ? 0.75 : 0.3 //change threshold based on if on phone or not
     const sections = document.querySelectorAll("section")
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         setTimeout(() => { //added slight delay to 
-          entry.target.classList.toggle("visible", entry.isIntersecting)
+          if (entry.isIntersecting) {
+            entry.target.classList.toggle("visible", entry.isIntersecting)
+            observer.unobserve(entry.target)
+          }
         }, 500)
       })
     }, {
-        threshold: thresholdSettings,
+        rootMargin: '-100px',
         trackVisibility: true,
-        delay: 100 //slight delay to account for fast scrolling weirdness
+        delay: 1000
       }
     )
     sections.forEach(section => {
@@ -60,14 +64,17 @@ function App() {
     <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="bg-white dark:bg-black">
           <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
-          <section id="home" className="pb-10">
-            <div className="w-full bg-no-repeat absolute bg-cover bg-center foam" style={{top: "-10vh", height: "120vh", backgroundSize: "200vh 121vh", backgroundImage: `url(${foam})`}}></div>
+          <section id="home" className="pb-10 relative">
             <Intro />
+            <a className="flex flex-col items-center justify-center absolute bottom-16 right-0 left-0 m-auto z-20 max-w-min" href="#skills">
+              <span className="text-white hover:text-blue dark:text-white mb-2 text-xl dark:hover:text-blue">Skills</span>
+              <img className="w-3 animate-bounce" src={DownArrowWhite} alt="Go to skills" />
+            </a>
           </section>
-          <section id="skills">
+          <section id="skills" className="my-24 relative">
             <Skills isDarkMode={isDarkMode}/>
           </section>
-          <section id="projects">
+          <section id="projects" className="py-10 relative">
             <Projects isDarkMode={isDarkMode}/>
           </section>
       </div>

@@ -3,6 +3,8 @@ import GitHub from '../assets/socials/github-white.svg'
 import LinkedIn from '../assets/socials/linkedin-white.svg'
 import Medium from '../assets/socials/medium-white.svg'
 import Instagram from '../assets/socials/instagram-white.svg'
+import foam from '../assets/foam.svg'
+
 
 
 
@@ -10,8 +12,9 @@ function Header() {
 
   return (
     <div className="App-header h-screen flex flex-col justify-center items-center w-full h-screen">
+        <div className="w-full bg-no-repeat absolute bg-cover bg-center foam" style={{top: "-10vh", height: "120vh", backgroundSize: "200vh 121vh", backgroundImage: `url(${foam})`}}></div>
         <div className="z-10 flex flex-col text-center text-white">
-        <div style={{maxWidth: '60%'}} className="m-auto text-focus-in">
+        <div style={{maxWidth: '60%'}} className="m-auto opacity-0 text-focus-in">
           <h1 className="text-4xl mb-3">Hello, my name is <strong>Evan Chernicky</strong>.</h1>
           <h2 className="text-2xl mb-6">I am a Washington, DC frontend developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.</h2>
           <div className="flex flex-row justify-center mb-6">
