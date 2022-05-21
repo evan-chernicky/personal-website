@@ -10,7 +10,7 @@ function Skills({isDarkMode}) {
                 <h2 className="text-6xl uppercase tracking-wider">Skills</h2>
                     <div className="flex flex-row flex-wrap pb-12 justify-center">
                         {skills.map(skill => (
-                            <div className="relative flex flex-col justify-center items-center w-12 md:w-20 m-6 cursor-default mt-8 mb-8 md:mb-16">
+                            <div key={skill.name} className="relative flex flex-col justify-center items-center w-12 md:w-20 m-6 cursor-default mt-8 mb-8 md:mb-16">
                                 <img className="max-h-24" src={isDarkMode ? skill.imageWhite : skill.imageBlack} alt={skill.name}/>
                                 <figcaption className="absolute -bottom-6 md:-bottom-12">{skill.name}</figcaption>
                             </div>

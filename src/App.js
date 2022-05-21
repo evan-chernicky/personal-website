@@ -13,6 +13,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const html = document.querySelector('html')
 
+  //set default color scheme based on browser settings
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setIsDarkMode(true)
@@ -30,6 +31,28 @@ function App() {
     html.style.setProperty('--scrollbar-background', '#1e1e1e')
     html.style.setProperty('--scrolltrack-background', '#fff')
   }
+
+
+  //observes sections and adds visibile class based on what section user is viewing
+  useEffect(() => {  
+    const sections = document.querySelectorAll("section")
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        setTimeout(() => { //added slight delay to 
+          entry.target.classList.toggle("visible", entry.isIntersecting)
+        }, 500)
+      })
+    }, {
+        threshold: 0.75,
+        trackVisibility: true,
+        delay: 100 //slight delay to account for fast scrolling weirdness
+      }
+    )
+    sections.forEach(section => {
+      observer.observe(section)
+    })
+  },[])
+
 
   return (
     <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>

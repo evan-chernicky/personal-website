@@ -46,7 +46,16 @@ body {
   }
 
   .border-draw {
-    animation: border-draw 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1; 
+    animation: border-draw-reverse 1.5s cubic-bezier(0.19, 1, 0.22, 1); 
+    background-image: linear-gradient(to right, #ff00ff 100%, #ff00ff 100%), linear-gradient(to bottom, #ff00ff 100%, #ff00ff 100%),   linear-gradient(to right, #00ffff 100%, #00ffff 100%), linear-gradient(to bottom, #00ffff 100%, #00ffff 100%);
+    background-position: 0 0, 100% 0,  100% 100%, 0 100%;
+    background-size: 100% 6px, 6px 100%, 100% 6px, 6px 100%;
+    background-repeat: no-repeat; 
+    animation-fill-mode: forwards
+  }
+
+  .visible .border-draw {
+    animation: border-draw 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1; 
     background-image: linear-gradient(to right, #ff00ff 100%, #ff00ff 100%), linear-gradient(to bottom, #ff00ff 100%, #ff00ff 100%),   linear-gradient(to right, #00ffff 100%, #00ffff 100%), linear-gradient(to bottom, #00ffff 100%, #00ffff 100%);
     background-position: 0 0, 100% 0,  100% 100%, 0 100%;
     background-size: 100% 6px, 6px 100%, 100% 6px, 6px 100%;
@@ -69,6 +78,24 @@ body {
     100% {
         background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
     }
+}
+
+@keyframes border-draw-reverse {
+  0% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
+  }
+  25% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 0;
+  }
+  50% {
+    background-size:    100% 6px, 6px 100%, 0 6px, 6px 0;
+  }
+  75% {
+    background-size:    100% 6px, 6px 0, 0 6px, 6px 0;
+  }
+  100% {
+    background-size:    0 6px, 6px 0, 0 6px, 6px 0;
+  }
 }
   
 
