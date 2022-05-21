@@ -26,7 +26,7 @@ module.exports = {
         blue: '#00ffff'
       },
       boxShadow: {
-        xl: '0 0px 39px 4px #ff00ff'
+        xl: '20px 20px 39px -15px'
       }
     },
   },

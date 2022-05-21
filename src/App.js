@@ -3,6 +3,7 @@ import './App.css';
 import Intro from './components/Intro.js'
 import Header from './components/Header.js'
 import Skills from './components/Skills.js'
+import Projects from './components/Projects.js'
 import foam from './assets/foam.svg'
 
 
@@ -40,6 +41,9 @@ function App() {
           </section>
           <section id="skills">
             <Skills isDarkMode={isDarkMode}/>
+          </section>
+          <section id="projects">
+            <Projects isDarkMode={isDarkMode}/>
           </section>
       </div>
     </div>

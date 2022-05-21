@@ -106,7 +106,7 @@ function Skills({isDarkMode}) {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-black dark:text-white">
-        <div className="md:m-32 m-10 text-center p-1 bg-black dark:bg-white shadow-xl shadow-pink dark:shadow-blue rounded-xl">
+        <div className="md:m-32 m-10 text-center p-1 bg-pink dark:bg-pink rounded-xl" style={{background: "linear-gradient(90deg, rgba(36,219,255,1) 0%, rgba(0,255,255,1) 50%, rgba(255,0,255,1) 50%)"}}>
             <div className="bg-white dark:bg-black p-6 md:py-14 md:px-24 max-w-screen-xl rounded-xl">
                 <h2 className="text-6xl font-bold uppercase">Skills</h2>
                     <div className="flex flex-row flex-wrap pb-12 justify-center">
