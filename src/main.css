@@ -624,16 +624,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
-}
-
-.bg-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 255 / var(--tw-bg-opacity));
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -646,16 +636,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
 }
 
-.p-1 {
-  padding: 0.25rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .py-5 {
@@ -711,20 +697,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: clamp(2rem, 6vw, 4rem);
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
 .tracking-wider {
   letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .text-black {
@@ -735,17 +713,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.shadow-xl {
-  --tw-shadow: 20px 20px 39px -15px;
-  --tw-shadow-colored: 20px 20px 39px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-pink {
-  --tw-shadow-color: #ff00ff;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .duration-700 {
@@ -821,6 +788,59 @@ body {
   }
 }
 
+.border-draw {
+  -webkit-animation: border-draw 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+          animation: border-draw 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  background-image: linear-gradient(to right, #ff00ff 100%, #ff00ff 100%), linear-gradient(to bottom, #ff00ff 100%, #ff00ff 100%),   linear-gradient(to right, #00ffff 100%, #00ffff 100%), linear-gradient(to bottom, #00ffff 100%, #00ffff 100%);
+  background-position: 0 0, 100% 0,  100% 100%, 0 100%;
+  background-size: 100% 6px, 6px 100%, 100% 6px, 6px 100%;
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes border-draw {
+  0% {
+    background-size:    0 6px, 6px 0, 0 6px, 6px 0;
+  }
+
+  25% {
+    background-size:    100% 6px, 6px 0, 0 6px, 6px 0;
+  }
+
+  50% {
+    background-size:    100% 6px, 6px 100%, 0 6px, 6px 0;
+  }
+
+  75% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 0;
+  }
+
+  100% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
+  }
+}
+
+@keyframes border-draw {
+  0% {
+    background-size:    0 6px, 6px 0, 0 6px, 6px 0;
+  }
+
+  25% {
+    background-size:    100% 6px, 6px 0, 0 6px, 6px 0;
+  }
+
+  50% {
+    background-size:    100% 6px, 6px 100%, 0 6px, 6px 0;
+  }
+
+  75% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 0;
+  }
+
+  100% {
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
+  }
+}
+
 @media only screen and (max-width: 976px) {
   .foam {
     background-size: 164vh 250vw;
@@ -864,24 +884,9 @@ body {
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 255 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark .dark\:shadow-blue {
-  --tw-shadow-color: #00ffff;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .dark .dark\:hover\:text-blue:hover {
