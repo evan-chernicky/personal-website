@@ -4,6 +4,7 @@ import Intro from './components/Intro.js'
 import Header from './components/Header.js'
 import Skills from './components/Skills.js'
 import Projects from './components/Projects.js'
+import Contact from './components/Contact.js'
 import DownArrowBlack from './assets/down-arrow-black.svg'
 import DownArrowWhite from './assets/down-arrow-white.svg'
 
@@ -76,6 +77,9 @@ function App() {
           </section>
           <section id="projects" className="py-10 relative">
             <Projects isDarkMode={isDarkMode}/>
+          </section>
+          <section id="contact" className="relative">
+            <Contact isDarkMode={isDarkMode}/>
           </section>
       </div>
     </div>
