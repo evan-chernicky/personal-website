@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import emailjs from '@emailjs/browser';
 import wave from '../assets/wave-bottom.svg'
 import LightAvatar from '../assets/light-avatar.png'
+import DarkAvatar from '../assets/dark-avatar.png'
 
 
 function Contact({isDarkMode}) {
@@ -12,7 +13,12 @@ const fadeIn = isEmailSent ? "opacity-100" : "opacity-0"
 function handleSubmit(e) {
     e.preventDefault()
 
-    emailjs.sendForm("service_ikx0j64", "template_98bodus", e.target,"5cJ8SpL2cm7Z8mIlc")
+    emailjs.sendForm(
+        process.env.REACT_APP_EMAIL_JS_SERVICE_ID, 
+        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, 
+        e.target, 
+        process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
+    )
     .then((result) => {
         if(result.text === "OK") {
             setIsEmailSent(true)
@@ -24,20 +30,19 @@ function handleSubmit(e) {
     e.target.reset()
 }
 
-
   return (
-    <div className="min-h-screen w-full bg-no-repeat bg-cover flex items-center" style={{backgroundImage: `url(${wave})`, backgroundPosition: '50% 32vh'}}>
-        <div className="max-w-5xl flex m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
-            <div className="px-12">
+    <div className="justify-center min-h-screen w-full bg-no-repeat bg-cover flex items-center" style={{backgroundImage: `url(${wave})`, backgroundPosition: '50% 32vh'}}>
+        <div className="m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
+            <div className="md:px-12">
                 <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Contact Me</h2>
-                <div className="flex items-center">
-                    <div className="pr-6">
-                        <img src={LightAvatar} alt="avatar"/>
+                <div className="flex flex-col md:flex-row">
+                    <div className="pr-6 mb-6 mx-auto" style={{maxWidth: "150px"}}>
+                        <img src={isDarkMode ? LightAvatar : DarkAvatar} alt="avatar"/>
                     </div>
                     <p className="text-black dark:text-white">With more than 3 years of web development experience, I constantly strive to produce light-weight, responsive, intuitive websites that both the client and I can be proud of. Consider contacting me to see how I can help you achieve your mission.</p>            
                 </div>
             </div>
-            <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col pl-12" style={{minWidth: "35%"}}>
+            <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col md:pl-12 mt-6 md:mt-0" style={{minWidth: "35%"}}>
                 <label htmlFor="name" className="dark:text-white font-medium text-left pb-2">Name:</label>
                 <input
                     type="text"
