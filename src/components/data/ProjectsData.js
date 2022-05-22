@@ -1,6 +1,8 @@
 import HoboTracks from '../../assets/projects/hobo-tracks.png'
 import ModelB from '../../assets/projects/model-b.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
+import PersonalWebsite from '../../assets/projects/personal-website.png'
+
 
 
 
@@ -22,7 +24,9 @@ export const projects = [
         ],
         deployment: "https://hobotracks.herokuapp.com/",
         github: "https://github.com/evan-chernicky/hobo-tracks",
-        walkthrough: "https://github.com/evan-chernicky/hobo-tracks"
+        walkthrough: "https://github.com/evan-chernicky/hobo-tracks",
+        wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
+
     },
     {
         name: "Model B",
@@ -40,6 +44,20 @@ export const projects = [
             "XD"
         ],
         deployment: "https://www.modelb.com/",
+    },
+    {
+        name: "Personal Website",
+        summary: "Created and designed personal website. Built using React and Tailwind. Integrated EmailJS for email services.",
+        image: PersonalWebsite,
+        tech: [
+            "React",
+            "Tailwind",
+            "EmailJS",
+            "CSS",
+        ],
+        deployment: "https://evanchernicky.com/",
+        github: "https://github.com/evan-chernicky/personal-website",
+
     },
     {
         name: "Jeopardy Game Show",

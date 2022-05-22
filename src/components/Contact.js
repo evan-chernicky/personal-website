@@ -32,7 +32,7 @@ function handleSubmit(e) {
 
   return (
     <div className="justify-center min-h-screen w-full bg-no-repeat bg-cover flex items-center" style={{backgroundImage: `url(${wave})`, backgroundPosition: '50% 32vh'}}>
-        <div className="fade-in-bottom opacity-0 m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
+        <div className="shadow dark:shadow-gray-700 fade-in-bottom opacity-0 m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
             <div className="md:px-12">
                 <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase">Contact Me</h2>
                 <div className="flex flex-col md:flex-row">
