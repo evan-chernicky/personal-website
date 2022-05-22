@@ -32,9 +32,9 @@ function handleSubmit(e) {
 
   return (
     <div className="justify-center min-h-screen w-full bg-no-repeat bg-cover flex items-center" style={{backgroundImage: `url(${wave})`, backgroundPosition: '50% 32vh'}}>
-        <div className="m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
+        <div className="fade-in-bottom opacity-0 m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
             <div className="md:px-12">
-                <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Contact Me</h2>
+                <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase">Contact Me</h2>
                 <div className="flex flex-col md:flex-row">
                     <div className="pr-6 mb-6 mx-auto" style={{maxWidth: "150px"}}>
                         <img src={isDarkMode ? LightAvatar : DarkAvatar} alt="avatar"/>
