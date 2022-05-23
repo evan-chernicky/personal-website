@@ -23,7 +23,7 @@ function Skills({isDarkMode}) {
                 </div>
             </div>
         </div>
-        <a className="flex flex-col items-center justify-center md:bottom-0 my-8 z-20 max-w-min xl:absolute" href="#projects">
+        <a className="flex flex-col items-center justify-center md:bottom-0 my-8 z-20 max-w-min" href="#projects">
               <span className="text-black hover:text-pink dark:text-white mb-2 text-xl dark:hover:text-blue">Projects</span>
               <img className="w-3 animate-bounce" src={isDarkMode ? DownArrowWhite : DownArrowBlack} alt="Go to projects" />
             </a>
