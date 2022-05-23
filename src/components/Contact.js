@@ -40,7 +40,7 @@ function handleSubmit(e) {
                         <img src={isDarkMode ? LightAvatar : DarkAvatar} alt="avatar"/>
                     </div>
                     <div>
-                    <p className="text-black dark:text-white text-lg mb-3">With more than 3 years of web development experience, I constantly strive to produce light-weight, responsive, intuitive websites of which the client and I can be proud of. When I’m not behind a
+                    <p className="text-black dark:text-white text-lg mb-3">With more than 3 years of web development experience, I constantly strive to produce light-weight, responsive, and intuitive websites. When I’m not behind a
 computer you will find me biking, hiking, skiing or planning my next backpacking trip around the globe.</p>         
 <p className="text-black dark:text-white text-lg"> Consider contacting me to see how I can help you achieve your mission.</p>   
 </div>
