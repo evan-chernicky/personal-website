@@ -6,12 +6,12 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1340px'
     },
     fontSize: {
       'sm': 'clamp(.6rem, 1vw, .8rem)',
       'md': 'clamp(.7rem, 1.5vw, 1.125rem)',
-      'lg': 'clamp(.75rem, 1.75vw, 1.125rem)',
+      'lg': 'clamp(.85rem, 1.3vw, 1rem)',
       'xl': 'clamp(.9rem, 2vw, 1.25rem)',
       '2xl': 'clamp(1.15rem, 2.5vw, 1.5rem)',
       '3xl': 'clamp(1.25rem, 3vw, 1.875rem)',

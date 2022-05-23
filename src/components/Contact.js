@@ -34,12 +34,16 @@ function handleSubmit(e) {
     <div className="justify-center min-h-screen w-full bg-no-repeat bg-cover flex items-center" style={{backgroundImage: `url(${wave})`, backgroundPosition: '50% 32vh'}}>
         <div style={{animationDelay: "0s"}} className="shadow dark:shadow-gray-700 fade-in-bottom opacity-0 m-6 max-w-5xl flex flex-col md:flex-row m-auto bg-white/90 dark:bg-black/90 p-12 dark:text-white text-black rounded-2xl">
             <div className="md:px-12">
-                <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase">Contact Me</h2>
+                <h2 className="mb-8 text-left text-black dark:text-white text-6xl uppercase text-center md:text-left">Contact Me</h2>
                 <div className="flex flex-col md:flex-row">
                     <div className="pr-6 mb-6 mx-auto" style={{maxWidth: "150px"}}>
                         <img src={isDarkMode ? LightAvatar : DarkAvatar} alt="avatar"/>
                     </div>
-                    <p className="text-black dark:text-white">With more than 3 years of web development experience, I constantly strive to produce light-weight, responsive, intuitive websites that both the client and I can be proud of. Consider contacting me to see how I can help you achieve your mission.</p>            
+                    <div>
+                    <p className="text-black dark:text-white text-lg mb-3">With more than 3 years of web development experience, I constantly strive to produce light-weight, responsive, intuitive websites of which the client and I can be proud of. When I’m not behind a
+computer you will find me biking, hiking, skiing or planning my next backpacking trip around the globe.</p>         
+<p className="text-black dark:text-white text-lg"> Consider contacting me to see how I can help you achieve your mission.</p>   
+</div>
                 </div>
             </div>
             <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col md:pl-12 mt-6 md:mt-0" style={{minWidth: "35%"}}>

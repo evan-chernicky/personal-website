@@ -9,7 +9,7 @@ import PersonalWebsite from '../../assets/projects/personal-website.png'
 export const projects = [
     {
         name: "HoboTracks",
-        summary: "HoboTracks allows you to create a personal journal of your trip, follow other travel's journeys, and see what messages they left behind all over the globe.",
+        summary: "HoboTracks allows you to create a personal journal of your trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
         image: HoboTracks,
         tech: [
             "Rails",
@@ -30,7 +30,7 @@ export const projects = [
     },
     {
         name: "Model B",
-        summary: "For three years, I developed and managed over 50 appealing and responsive WordPress websites using HTML, CSS, JS, and PHP while working at Model B.",
+        summary: "Model B is a full-service advertising agency which integrates creativity and technology. For three years at Model B, I developed and managed over 90 distinctive, attractive, and responsive websites for a wide range of businesses.",
         image: ModelB,
         tech: [
             "HTML",
@@ -41,7 +41,7 @@ export const projects = [
             "Bootstrap",
             "Foundation",
             "SASS",
-            "XD"
+            "XD",
         ],
         deployment: "https://www.modelb.com/",
     },
