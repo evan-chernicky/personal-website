@@ -9,7 +9,7 @@ import PersonalWebsite from '../../assets/projects/personal-website.png'
 export const projects = [
     {
         name: "HoboTracks",
-        summary: "HoboTracks allows you to create a personal journal of your trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
+        summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
         image: HoboTracks,
         tech: [
             "Rails",
