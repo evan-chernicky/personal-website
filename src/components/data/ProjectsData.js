@@ -29,7 +29,7 @@ export const projects = [
     },
     {
         name: "Model B",
-        summary: "Model B is a full-service advertising agency which integrates creativity and technology. For three years, I developed and managed over 90 distinctive and responsive websites for a wide range of businesses.",
+        summary: "Model B is a full-service advertising agency which integrates creativity and technology. For three years, I developed and managed over 65 distinctive and responsive websites for a wide range of businesses.",
         image: ModelB,
         tech: [
             "HTML",
