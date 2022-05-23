@@ -72,5 +72,6 @@ export const projects = [
         ],
         deployment: "https://evan-chernicky.github.io/Jeopardy-Game/",
         github: "https://github.com/evan-chernicky/hobo-tracks",
+        wireframe: "https://xd.adobe.com/view/bed08911-10b5-42f7-ad6f-4a348e03b49c-eb83/"
     },
 ]
