@@ -6,7 +6,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-<img src="src/assets/dark-avatar.png" alt="Logo" width="200">
+<img src="src/assets/light-avatar.png" alt="Logo" width="200">
   <h3 align="center">Personal Website</h3>
 
   <p align="center">
