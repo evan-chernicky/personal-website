@@ -35,6 +35,7 @@ function App() {
   else {
     html.style.setProperty('--scrollbar-background', '#1e1e1e')
     html.style.setProperty('--scrolltrack-background', '#fff')
+    html.style.setProperty('background', '#fff')
   }
 
 
