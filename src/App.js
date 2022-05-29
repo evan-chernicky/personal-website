@@ -29,10 +29,13 @@ function App() {
   if (isDarkMode) {
     html.style.setProperty('--scrollbar-background', '#fff')
     html.style.setProperty('--scrolltrack-background', '#1e1e1e')
+    html.style.setProperty('body', '#1e1e1e')
+
   }
   else {
     html.style.setProperty('--scrollbar-background', '#1e1e1e')
     html.style.setProperty('--scrolltrack-background', '#fff')
+    html.style.setProperty('body', '#fff')
   }
 
 
