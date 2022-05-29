@@ -7,15 +7,11 @@ function Header({setIsDarkMode, isDarkMode}) {
 
     const [isScrollUp, setIsScrollUp] = useState(true)
 
-
-    //scrolling up or down?
-    setTimeout(() => { //for some reason, it return false initially on load, so it needs to wait half a second before execution
-        window.onscroll = function(e) {
-            setIsScrollUp(this.oldScroll > this.scrollY);
+    //if scrolling up or, near top of page, add scrollbar
+        window.onscroll = function() {
+            setIsScrollUp(this.oldScroll > this.scrollY || this.scrollY < 25);
             this.oldScroll = this.scrollY;
         }
-    }, 500)
-
 
   return (
     <header className={`duration-700 flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>
