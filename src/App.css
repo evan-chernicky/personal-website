@@ -198,6 +198,10 @@ body {
 }
 }
 
+#site {
+  min-height: 100vh;
+}
+
 
 
 
@@ -207,16 +211,16 @@ body {
 
 .fadeOut {
   animation: 0.5s fadeOut forwards;
+
 }
+
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate(-20px, 0);
   }
   to {
     opacity: 1;
-    transform: translate(0px, 0px);
   }
 }
 

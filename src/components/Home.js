@@ -35,7 +35,6 @@ function App({isDarkMode, setIsDarkMode}) {
     },[])
 
   return (
-    <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="bg-white dark:bg-black">
           <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
           <section id="home" className="pb-10 relative">
@@ -58,7 +57,6 @@ function App({isDarkMode, setIsDarkMode}) {
             <Contact isDarkMode={isDarkMode}/>
           </section>
       </div>
-    </div>
   );
 }
 

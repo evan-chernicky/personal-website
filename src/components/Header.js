@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import LightBulbWhite from '../assets/light-bulb-white.svg'
 import LightBulbBlack from '../assets/light-bulb-black.svg'
 
@@ -12,6 +12,8 @@ function Header({setIsDarkMode, isDarkMode}) {
             setIsScrollUp(this.oldScroll > this.scrollY || this.scrollY < 25);
             this.oldScroll = this.scrollY;
         }
+
+        console.log(isScrollUp)
 
   return (
     <header className={`duration-700 flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>

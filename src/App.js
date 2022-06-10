@@ -34,7 +34,7 @@ function App() {
   }
 
 
-  const {setNewLocation, newLocaiton, transitionStage, setTransistionStage} = useContext(PageContext)
+  const {newLocaiton, transitionStage, setTransistionStage} = useContext(PageContext)
   const navigate = useNavigate()
 
   return (
