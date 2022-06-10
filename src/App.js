@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react'
-import {Routes, Route} from "react-router-dom"
+import React, {useEffect, useState, useContext} from 'react'
+import {Routes, Route, useNavigate} from "react-router-dom"
 import Home from './components/Home'
 import About from './components/About'
+import {PageContext} from './components/PageContext'
 import './App.css';
 
 
@@ -33,37 +34,23 @@ function App() {
   }
 
 
-  //observes sections and adds visibile class based on what section user is viewing
-  useEffect(() => { 
-    const sections = document.querySelectorAll("section")
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        setTimeout(() => { //added slight delay to 
-          if (entry.isIntersecting) {
-            entry.target.classList.toggle("visible", entry.isIntersecting)
-            observer.unobserve(entry.target)
-          }
-        }, 500)
-      })
-    }, {
-        rootMargin: '-100px',
-        trackVisibility: true,
-        delay: 1000
-      }
-    )
-    sections.forEach(section => {
-      observer.observe(section)
-    })
-
-  },[])
-
+  const {setNewLocation, newLocaiton, transitionStage, setTransistionStage} = useContext(PageContext)
+  const navigate = useNavigate()
 
   return (
     <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
-    <Routes>
-      <Route path="*" exact element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
-      <Route path="/about" exact element={<About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
-    </Routes>
+        <div className={`${transitionStage}`} onAnimationEnd={() => {
+          if (transitionStage === "fadeOut") {
+            setTransistionStage("fadeIn")
+            navigate(newLocaiton)
+          }
+        }}
+      >
+      <Routes>
+        <Route path="*" exact element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
+        <Route path="/about" exact element={<About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />} />
+      </Routes>
+      </div>
     </div>
   );
 }

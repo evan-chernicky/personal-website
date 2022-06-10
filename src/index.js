@@ -4,12 +4,17 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import {PageProvider} from './components/PageContext'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <PageProvider>
+        <App />
+      </PageProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

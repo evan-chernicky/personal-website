@@ -25,7 +25,10 @@ function Header({setIsDarkMode, isDarkMode}) {
         </button>         
         )}
         <nav>
-            <ul className="flex flex-row text-black dark:text-white duration-75">
+            <ul className="flex flex-row text-black dark:text-white duration-75 text-sm md:text-md">
+                <li className="px-3">
+                    <a className="hover:text-pink dark:hover:text-blue" href="#about">About</a>
+                </li>
                 <li className="px-3">
                     <a className="hover:text-pink dark:hover:text-blue" href="#skills">Skills</a>
                 </li>
