@@ -35,8 +35,9 @@ function App({isDarkMode, setIsDarkMode}) {
     },[])
 
   return (
-      <div className="bg-white dark:bg-black">
-          <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
+    <>
+    <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
+      <div className="bg-white dark:bg-black page">
           <section id="home" className="pb-10 relative">
             <Intro />
             <a className="flex flex-col items-center justify-center absolute bottom-16 right-0 left-0 m-auto z-20 max-w-min" href="#skills">
@@ -44,7 +45,7 @@ function App({isDarkMode, setIsDarkMode}) {
               <img className="w-3 animate-bounce" src={DownArrowWhite} alt="Go to skills" />
             </a>
           </section>
-          <section id="skills" className="my-24 relative">
+          <section id="about" className="my-24 relative">
             <HomeAbout isDarkMode={isDarkMode}/>
           </section>
           <section id="skills" className="my-24 relative">
@@ -57,6 +58,7 @@ function App({isDarkMode, setIsDarkMode}) {
             <Contact isDarkMode={isDarkMode}/>
           </section>
       </div>
+      </>
   );
 }
 

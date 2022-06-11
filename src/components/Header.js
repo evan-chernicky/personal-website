@@ -28,16 +28,16 @@ function Header({setIsDarkMode, isDarkMode}) {
         )}
         <nav>
             <ul className="flex flex-row text-black dark:text-white duration-75 text-sm md:text-md">
-                <li className="px-3">
+                <li className="md:px-3 px-2">
                     <a className="hover:text-pink dark:hover:text-blue" href="#about">About</a>
                 </li>
-                <li className="px-3">
+                <li className="md:px-3 px-2">
                     <a className="hover:text-pink dark:hover:text-blue" href="#skills">Skills</a>
                 </li>
-                <li className="px-3">
+                <li className="md:px-3 px-2">
                     <a className="hover:text-pink dark:hover:text-blue" href="#projects">Projects</a>
                 </li>
-                <li className="px-3">
+                <li className="md:px-3 px-2">
                     <a className="hover:text-pink dark:hover:text-blue" href="#contact">Contact</a>
                 </li>
             </ul>

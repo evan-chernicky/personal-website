@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext} from 'react'
-import {Routes, Route, useNavigate} from "react-router-dom"
+import {Routes, Route, useNavigate, useLocation} from "react-router-dom"
 import Home from './components/Home'
 import About from './components/About'
 import {PageContext} from './components/PageContext'
@@ -10,6 +10,7 @@ function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(false)
   const html = document.querySelector('html')
+  const location = useLocation()
 
   //set default color scheme based on browser settings
   useEffect(() => {
@@ -36,6 +37,30 @@ function App() {
 
   const {newLocaiton, transitionStage, setTransistionStage} = useContext(PageContext)
   const navigate = useNavigate()
+
+      //observes sections and adds visibile class based on what section user is viewing
+      useEffect(() => { 
+        const sections = document.querySelectorAll("section")
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            setTimeout(() => { //added slight delay to 
+              if (entry.isIntersecting) {
+                entry.target.classList.toggle("visible", entry.isIntersecting)
+                observer.unobserve(entry.target)
+              }
+            }, 500)
+          })
+        }, {
+            rootMargin: '-100px',
+            trackVisibility: true,
+            delay: 1000
+          }
+        )
+        sections.forEach(section => {
+          observer.observe(section)
+        })
+    
+      },[location])
 
   return (
     <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
