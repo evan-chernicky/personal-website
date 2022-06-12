@@ -10,29 +10,7 @@ import DownArrowWhite from '../assets/down-arrow-white.svg'
 
 function App({isDarkMode, setIsDarkMode}) {
 
-    //observes sections and adds visibile class based on what section user is viewing
-    useEffect(() => { 
-      const sections = document.querySelectorAll("section")
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          setTimeout(() => { //added slight delay to 
-            if (entry.isIntersecting) {
-              entry.target.classList.toggle("visible", entry.isIntersecting)
-              observer.unobserve(entry.target)
-            }
-          }, 500)
-        })
-      }, {
-          rootMargin: '-100px',
-          trackVisibility: true,
-          delay: 1000
-        }
-      )
-      sections.forEach(section => {
-        observer.observe(section)
-      })
-  
-    },[])
+
 
   return (
     <>

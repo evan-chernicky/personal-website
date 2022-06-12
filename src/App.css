@@ -25,6 +25,29 @@ body {
   top: -5%;
 }
 
+.about-items li a::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: -48px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #1E1E1E;
+  transition: 0.3s;
+}
+.about-items li a.visible::after {
+  background: #ff00ff;
+  border-color: #ff00ff;
+}
+.about-items li a.visible {
+  color: #ff00ff;
+}
+
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-background);
     border-radius: 20px;

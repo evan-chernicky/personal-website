@@ -35,6 +35,8 @@ function App() {
   }
 
 
+
+
   const {newLocaiton, transitionStage, setTransistionStage} = useContext(PageContext)
   const navigate = useNavigate()
 
@@ -60,7 +62,16 @@ function App() {
           observer.observe(section)
         })
     
-      },[location])
+      },[location.pathname])
+
+      //Fixes bug where React Router starts you in middle of page if you scrolled down in previous page
+      useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'instant'
+        })
+      },[location.pathname])
+
 
   return (
     <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
