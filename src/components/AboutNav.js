@@ -9,21 +9,16 @@ function AboutNav() {
             const observer = new IntersectionObserver(entries => {
               entries.forEach(entry => {
                   console.log(entry)
-                    if (entry.isIntersecting) {
-                        for (let item of navItems) {
-                            if(item.hash.includes(entry.target.id)) {
-                                item.classList.add("visible")
-                            }
-                            else {
-                                item.classList.remove("visible")
-                            }
-                        }
+                for (let item of navItems) {
+                    if(item.hash.includes(entry.target.id)) {
+                        item.classList.toggle("visible", entry.isIntersecting)
                     }
+                }
               })
             }, {
-                rootMargin: '-100px',
                 trackVisibility: true,
-                delay: 500
+                delay: 250,
+                rootMargin: '-50% 0% -50% 0%'
               }
             )
             sections.forEach(section => {
@@ -33,25 +28,22 @@ function AboutNav() {
           },[])
 
   return (
-    <nav className="text-black dark:text-white flex flex-row top-0 sticky h-screen items-center justify-center py-24" style={{width: "30%"}}>
-        <ul className="about-items flex flex-col h-full justify-evenly items-end pr-10 relative">
+    <nav className="text-black dark:text-white flex flex-row top-0 sticky h-screen items-center justify-center py-36" style={{width: "30%"}}>
+        <ul className="about-items flex flex-col h-full justify-between items-end pr-10 relative">
         <li className="relative">
-            <a href="#story">My Story</a>
+            <a className="hover:text-blue duration-300" href="#story">My Story</a>
         </li>
         <li className="relative">
-            <a href="#experience">Experience</a>
+            <a className="hover:text-blue duration-300" href="#experience">Experience</a>
         </li>
         <li className="relative">
-            <a href="#skills">Skills</a>
+            <a className="hover:text-blue duration-300" href="#education">Education</a>
         </li>
         <li className="relative">
-            <a href="#school">School</a>
-        </li>
-        <li className="relative">
-            <a href="#interests">Interests</a>
+            <a className="hover:text-blue duration-300" href="#interests">Interests</a>
         </li>
         </ul>
-        <div style={{width: "1px"}} className="bg-white h-full"></div>
+        <div style={{width: "1px", height: "97%"}} className="bg-black dark:bg-white"></div>
     </nav>
   )
 }

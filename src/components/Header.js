@@ -13,8 +13,6 @@ function Header({setIsDarkMode, isDarkMode}) {
             this.oldScroll = this.scrollY;
         }
 
-        console.log(isScrollUp)
-
   return (
     <header className={`duration-700 flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>
         {isDarkMode ? (

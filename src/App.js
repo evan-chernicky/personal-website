@@ -55,7 +55,7 @@ function App() {
         }, {
             rootMargin: '-100px',
             trackVisibility: true,
-            delay: 1000
+            delay: 250
           }
         )
         sections.forEach(section => {

@@ -22,7 +22,11 @@ body {
   height: 45vw;
   background: #00ffff;
   right: 5%;
-  top: -5%;
+  top: -25px;
+}
+
+.list-disc {
+  padding-left: 1.5em;
 }
 
 .about-items li a::after {
@@ -31,20 +35,28 @@ body {
   height: 15px;
   right: -48px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 1px solid #1E1E1E;
   position:absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #1E1E1E;
+  background: #fff;
   transition: 0.3s;
 }
+
+.dark .about-items li a::after {
+  border: 1px solid #fff;
+  background: #1E1E1E;
+}
+
+
 .about-items li a.visible::after {
   background: #ff00ff;
   border-color: #ff00ff;
 }
 .about-items li a.visible {
   color: #ff00ff;
+  font-weight: 700;
 }
 
 
