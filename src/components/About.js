@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import {Link} from "react-router-dom"
+import React, {useState, useContext} from 'react'
 import AboutNav from './AboutNav'
+import {PageContext} from './PageContext'
 import space from '../assets/space.jpg'
 
 
@@ -15,11 +15,19 @@ function About() {
           this.oldScroll = this.scrollY;
       }
 
+      const {setNewLocation, setTransistionStage} = useContext(PageContext)
+
+      function renderPageTransition(e) {
+        e.preventDefault()
+        setTransistionStage("fadeOut")
+        setNewLocation("/")
+    }
+
 
   return (
     <>
     <header className={`text-black dark:text-white duration-700 flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>
-    <Link className="hover:text-blue" to="/">&larr; Back Home</Link>
+    <a onClick={(e) => renderPageTransition(e)} className="hover:text-blue" href="/">&larr; Back Home</a>
   </header>
     <div className="bg-white dark:bg-black page">
     <div className="min-h-screen m-auto flex flex-row relative">
