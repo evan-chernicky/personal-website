@@ -1,13 +1,29 @@
-import React, {useState, useContext} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import AboutNav from './AboutNav'
 import {PageContext} from './PageContext'
 import space from '../assets/space.jpg'
 
 
-
 function About() {
 
   const [isScrollUp, setIsScrollUp] = useState(true)
+  const [showMobileNav, setShowMobileNav] = useState(false)
+  const [width, setWidth] = useState(window.innerWidth)
+  function updateDimensions () {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener("resize", updateDimensions);
+      return () => window.removeEventListener("resize", updateDimensions);
+  }, [])
+
+  //unfortunate fix for annoying scroll for mobile nav
+  const body = document.querySelector('body')
+  if (showMobileNav) {
+    body.style.overflow = "hidden"
+  } else {
+    body.style.overflow = "scroll"
+  }
 
   //if scrolling up or, near top of page, add scrollbar
       window.onscroll = function() {
@@ -23,21 +39,31 @@ function About() {
         setNewLocation("/")
     }
 
-
   return (
     <>
-    <header className={`text-black dark:text-white duration-700 flex py-5 justify-between w-11/12 right-0 left-0 m-auto fixed items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>
+    <header className={`dark:bg-black/70 bg-white/70 dark:lg:bg-transparent lg:bg-transparent text-black dark:text-white duration-700 flex py-5 justify-between w-full right-0 left-0 fixed px-8 items-center z-10 ${isScrollUp ? 'translate-y-0' : '-translate-y-full'}`}>
     <a onClick={(e) => renderPageTransition(e)} className="hover:text-blue" href="/">&larr; Back Home</a>
-  </header>
-    <div className="bg-white dark:bg-black page">
+    {width < 976 ? (
+    <button onClick={() => setShowMobileNav(!showMobileNav)} className={`menu + ${showMobileNav ? "opened" : null}`} aria-label="Main Menu">
+      <svg className="stroke-black dark:stroke-white" width="30" height="30" viewBox="0 0 100 100">
+          <path className="line line1 stroke-black dark:stroke-white" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+          <path className="line line2 stroke-black dark:stroke-white" d="M 20,50 H 80"></path>
+          <path className="line line3 stroke-black dark:stroke-white" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+      </svg>
+    </button> 
+    ) : null} 
+    </header>
+    <div className={`bg-white dark:bg-black ${!showMobileNav ? "page" : null} ${showMobileNav ? "overflow-y-hidden" : null}`}>
     <div className="min-h-screen m-auto flex flex-row relative">
-      <div className="relative visible mt-36" style={{width: "30%"}}>
+      <div className="grid grid-cols-5">
+        <div className="col-span-5 lg:col-span-4 grid grid-cols-1 lg:grid-cols-3">
+      <div className="relative visible mt-36 col-span-1 lg:px-0">
             <div className="image-line h-full expand-line opacity-0"></div>
             <img src={space} alt="Evan Chernicky" />
         </div>
-        <div className="flex flex-col" style={{width: "70%"}}>
-        <section id="story" className="flex overflow-hidden mt-36" >
-                <div className="px-24 text-left text-black dark:text-white slide-in-right opacity-0">
+        <div className="px-8 lg:px-24 flex flex-col col-span-2">
+        <section id="story" className="flex overflow-hidden mt-14 lg:mt-36" >
+                <div className="text-left text-black dark:text-white slide-in-right opacity-0">
                     <h2  style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">My Story</h2>
                     <div className="max-w-2xl">
                         <p className="text-black dark:text-white mb-3">From my earliest memories, I remember always being captivated by stories. In 2005, I went to see the Space Shuttle take off (pictured left) and being consumed by these explorers risking their life to discover the last frontier. This same fascination led me daydream about adventures in faraway places, listen to podcasts about the rise and fall of the Roman empire, dive into the deep fictional lore of the Halo video game franchise, and occasionally even sketch out ideas for novels on sheets of papers. Eventually, this same passion for storytelling would lead me to graduate in a degree from Denison University with a degree in Communication.</p>
@@ -48,7 +74,7 @@ function About() {
                 </div>
             </section>
             <section id="experience" className="flex flex-row overflow-hidden" >
-                <div className="px-24 mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
+                <div className="mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Experience</h2>
                     <div className="max-w-2xl">
                       <div className="mb-10">
@@ -116,7 +142,7 @@ function About() {
                 </div>
             </section>
             <section id="education" className="flex flex-row overflow-hidden" >
-                <div className="px-24 mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
+                <div className="mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Education</h2>
                     <div className="max-w-2xl">
                     <div className="mb-10">
@@ -143,7 +169,7 @@ function About() {
                   </div>
             </section>
             <section id="interests" className="flex flex-row overflow-hidden mb-36" >
-                <div className="px-24 mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
+                <div className="mt-14 text-left text-black dark:text-white slide-in-right opacity-0 w-full">
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Interests</h2>
                     <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Traveling (16 countries and counting)</li>
@@ -157,7 +183,9 @@ function About() {
                 </div>
             </section>
             </div>
-          <AboutNav />
+            </div>
+          <AboutNav showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} width={width}/>
+          </div>
     </div>
     </div>
     </>

@@ -1,6 +1,16 @@
-import React, {useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 
-function AboutNav() {
+function AboutNav({showMobileNav, setShowMobileNav}) {
+
+    const [width, setWidth] = useState(window.innerWidth)
+    const menuHidden = (showMobileNav === false && width < 976) ? "hidden" : null
+    function updateDimensions () {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, [])
 
           //observes sections and adds visibile class based on what section user is viewing
           useEffect(() => { 
@@ -8,7 +18,6 @@ function AboutNav() {
             const navItems = document.querySelectorAll(".about-items li a")
             const observer = new IntersectionObserver(entries => {
               entries.forEach(entry => {
-                  console.log(entry)
                 for (let item of navItems) {
                     if(item.hash.includes(entry.target.id)) {
                         item.classList.toggle("visible", entry.isIntersecting)
@@ -28,22 +37,22 @@ function AboutNav() {
           },[])
 
   return (
-    <nav className="text-black dark:text-white flex flex-row top-0 sticky h-screen items-center justify-center py-36" style={{width: "30%"}}>
+    <nav className={`${menuHidden} fixed lg:sticky text-black dark:text-white flex flex-row top-0 h-screen items-center justify-center py-36 bg-white bg-black lg:bg-transparent w-full`}>
         <ul className="about-items flex flex-col h-full justify-between items-end pr-10 relative">
         <li className="relative">
-            <a className="hover:text-blue duration-300" href="#story">My Story</a>
+            <a onClick={() => setShowMobileNav(false)} className="hover:text-blue duration-300" href="#story">My Story</a>
         </li>
         <li className="relative">
-            <a className="hover:text-blue duration-300" href="#experience">Experience</a>
+            <a onClick={() => setShowMobileNav(false)} className="hover:text-blue duration-300" href="#experience">Experience</a>
         </li>
         <li className="relative">
-            <a className="hover:text-blue duration-300" href="#education">Education</a>
+            <a onClick={() => setShowMobileNav(false)} className="hover:text-blue duration-300" href="#education">Education</a>
         </li>
         <li className="relative">
-            <a className="hover:text-blue duration-300" href="#interests">Interests</a>
+            <a onClick={() => setShowMobileNav(false)} className="hover:text-blue duration-300" href="#interests">Interests</a>
         </li>
         </ul>
-        <div style={{width: "1px", height: "97%"}} className="bg-black dark:bg-white"></div>
+        <div style={{width: "1px", height: "calc(100% - 10px)"}} className="bg-black dark:bg-white"></div>
     </nav>
   )
 }
