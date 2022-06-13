@@ -18,9 +18,9 @@ function App({isDarkMode, setIsDarkMode}) {
       <div className="bg-white dark:bg-black page">
           <section id="home" className="pb-10 relative">
             <Intro />
-            <a className="flex flex-col items-center justify-center absolute bottom-16 right-0 left-0 m-auto z-20 max-w-min" href="#skills">
-              <span className="text-white hover:text-blue dark:text-white mb-2 text-xl dark:hover:text-blue">Skills</span>
-              <img className="w-3 animate-bounce" src={DownArrowWhite} alt="Go to skills" />
+            <a className="flex flex-col items-center justify-center absolute bottom-16 right-0 left-0 m-auto z-20 max-w-min" href="#about">
+              <span className="text-white hover:text-blue dark:text-white mb-2 text-xl dark:hover:text-blue">About</span>
+              <img className="w-3 animate-bounce" src={DownArrowWhite} alt="Go to about" />
             </a>
           </section>
           <section id="about" className="my-24 relative">

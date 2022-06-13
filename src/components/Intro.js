@@ -32,7 +32,7 @@ function Header() {
             </a>
 
           </div>          
-          <a className="text-xl border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#skills">LEARN MORE</a>
+          <a className="text-xl border border-white inline-block w-34 py-3 px-5 m-auto hover:bg-white hover:text-black duration-500" href="#about">LEARN MORE</a>
         </div>
         </div>
     </div>

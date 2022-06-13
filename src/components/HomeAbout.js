@@ -1,8 +1,10 @@
 import React, {useContext} from 'react'
 import {PageContext} from './PageContext'
 import ProfilePic from '../assets/profile_pic.jpg'
+import DownArrowBlack from '../assets/down-arrow-black.svg'
+import DownArrowWhite from '../assets/down-arrow-white.svg'
 
-function HomeAbout() {
+function HomeAbout({isDarkMode}) {
 
     const {setNewLocation, setTransistionStage} = useContext(PageContext)
 
@@ -13,9 +15,9 @@ function HomeAbout() {
     }
 
   return (
-    <div className="min-h-screen m-auto items-center relative flex items-center overflow-hidden">
+    <div className="min-h-screen m-auto items-center relative flex items-center overflow-hidden flex-col">
         <div className="flex flex-row">
-            <div className="relative" style={{width: "40%"}}>
+            <div className="relative" style={{width: "40%", paddingTop: "25px"}}>
                 <div className="image-line expand-line opacity-0"></div>
                 <img src={ProfilePic} alt="Evan Chernicky" />
             </div>
@@ -28,6 +30,10 @@ function HomeAbout() {
                 </div>
             </div>
         </div>
+        <a className="flex flex-col items-center justify-center my-8 z-20 max-w-min" href="#skills">
+              <span className="text-black hover:text-pink dark:text-white mb-2 text-xl dark:hover:text-blue">Skills</span>
+              <img className="w-3 animate-bounce" src={isDarkMode ? DownArrowWhite : DownArrowBlack} alt="Go to skills" />
+        </a>
     </div>
   )
 }
