@@ -1,16 +1,8 @@
 import React, {useState, useEffect} from 'react'
 
-function AboutNav({showMobileNav, setShowMobileNav}) {
+function AboutNav({showMobileNav, setShowMobileNav, width}) {
 
-    const [width, setWidth] = useState(window.innerWidth)
     const menuHidden = (showMobileNav === false && width < 976) ? "hidden" : null
-    function updateDimensions () {
-        setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-        window.addEventListener("resize", updateDimensions);
-        return () => window.removeEventListener("resize", updateDimensions);
-    }, [])
 
           //observes sections and adds visibile class based on what section user is viewing
           useEffect(() => { 
@@ -37,7 +29,7 @@ function AboutNav({showMobileNav, setShowMobileNav}) {
           },[])
 
   return (
-    <nav className={`${menuHidden} fixed lg:sticky text-black dark:text-white flex flex-row top-0 h-screen items-center justify-center py-36 bg-white bg-black lg:bg-transparent w-full`}>
+    <nav className={`${menuHidden} fixed lg:sticky text-black dark:text-white flex flex-row top-0 h-screen items-center justify-center py-36 bg-white dark:bg-black lg:bg-transparent w-full`}>
         <ul className="about-items flex flex-col h-full justify-between items-end pr-10 relative">
         <li className="relative">
             <a onClick={() => setShowMobileNav(false)} className="hover:text-blue duration-300" href="#story">My Story</a>
