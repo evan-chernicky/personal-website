@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Project({project, isDarkMode, index}) {
+function Project({project, index}) {
 
     const isEven = (index % 2 === 0 || index === 0) ? true : false
 
