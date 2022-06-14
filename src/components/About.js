@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react'
 import AboutNav from './AboutNav'
 import {PageContext} from './PageContext'
-import space from '../assets/space.jpg'
+import space from '../assets/space-lighter.jpg'
 
 
 function About() {
