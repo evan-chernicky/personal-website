@@ -74,7 +74,7 @@ function App() {
 
 
   return (
-    <div  id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id="site" className={`App ${isDarkMode ? 'dark' : 'light'}`}>
         <div className={`${transitionStage}`} onAnimationEnd={() => {
           if (transitionStage === "fadeOut") {
             setTransistionStage("fadeIn")

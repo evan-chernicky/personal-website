@@ -16,7 +16,7 @@ function HomeAbout({isDarkMode}) {
 
   return (
     <div className="min-h-screen m-auto items-center relative flex items-center overflow-hidden flex-col">
-        <div className="grid grid-cols-1 md:grid-cols-5">
+        <div className="grid grid-cols-1 md:grid-cols-5 pt-10">
             <div className="relative md:col-span-2">
                 <div className="image-line expand-line opacity-0"></div>
                 <img src={ProfilePic} alt="Evan Chernicky" />

@@ -20,11 +20,11 @@ function About() {
 
   //unfortunate fix for annoying scroll for mobile nav
   const body = document.querySelector('body')
-  if (showMobileNav) {
-    body.style.overflow = "hidden"
-  } else {
-    body.style.overflow = "scroll"
-  }
+    if (showMobileNav) {
+      body.style.overflow = "hidden"
+    } else {
+      body.style.overflow = "scroll"
+    }
 
   //if scrolling up or, near top of page, add scrollbar
       window.onscroll = function() {
