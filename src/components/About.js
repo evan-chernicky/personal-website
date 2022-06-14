@@ -21,7 +21,7 @@ function About() {
   //unfortunate fix for annoying scroll for mobile nav
   const body = document.querySelector('body')
     if (showMobileNav) {
-      body.style.overflow = "hidden"
+      body.style.overflowY = "hidden"
     } else {
       body.style.overflowY = "scroll"
     }
