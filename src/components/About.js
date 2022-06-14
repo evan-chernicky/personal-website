@@ -36,6 +36,7 @@ function About() {
 
       function renderPageTransition(e) {
         e.preventDefault()
+        setShowMobileNav(false)
         setTransistionStage("fadeOut")
         setNewLocation("/")
     }
