@@ -23,7 +23,7 @@ function About() {
     if (showMobileNav) {
       body.style.overflow = "hidden"
     } else {
-      body.style.overflow = "scroll"
+      body.style.overflowY = "scroll"
     }
 
   //if scrolling up or, near top of page, add scrollbar
