@@ -181,6 +181,7 @@ function About() {
                           <li>Podcasts about ancient history, philosophy, economics, and current events.</li>
                           <li>iPhone Photography</li>
                           <li>Music that makes weird noises </li>
+                          <li>Biking to everywhere in DC </li>
                         </ul>
                 </div>
             </section>
