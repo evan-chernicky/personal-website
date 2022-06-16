@@ -63,7 +63,7 @@ HoboTracks Features:
 <!-- FUTURE UPDATES -->
 ## Future Updates
 
-- [ ] About Section
+- [x] About Section
 - [ ] Additional Project Details with GIFs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
