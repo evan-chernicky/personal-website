@@ -2,6 +2,8 @@ import HoboTracks from '../../assets/projects/hobo-tracks.png'
 import ModelB from '../../assets/projects/model-b.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
 import PersonalWebsite from '../../assets/projects/personal-website.png'
+import RecycleQuest from '../../assets/projects/ecohacks.png'
+
 
 
 
@@ -26,6 +28,24 @@ export const projects = [
         github: "https://github.com/evan-chernicky/hobo-tracks",
         walkthrough: "https://www.youtube.com/watch?v=X4t8KVCbkYU",
         wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
+    },
+    {
+        name: "Recycle Quest",
+        summary: "Competed in 2.5 day hackathon (EcoHacks 2022). Collaborated with 3 person team to create app that allows companies and organizations to compete with each other by scanning barcodes of recycled items.",
+        image: RecycleQuest,
+        tech: [
+            "Rails",
+            "Ruby",
+            "JavaScript",
+            "React",
+            "PostgreSQL",
+            "Scandit API",
+            "Tailwind",
+            "XD",
+        ],
+        github: "https://github.com/agubernikoff/ecohack",
+        walkthrough: "https://www.youtube.com/watch?v=jAx4Gip3KZw",
+        wireframe: "https://xd.adobe.com/view/620099e6-7dbd-4fee-9a05-799b6aa00137-3753/"
     },
     {
         name: "Model B",
