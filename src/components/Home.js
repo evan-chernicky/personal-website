@@ -15,7 +15,7 @@ function App({isDarkMode, setIsDarkMode}) {
   return (
     <>
     <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}/>
-      <div className="bg-white dark:bg-black page test">
+      <div className="bg-white dark:bg-black page">
           <section id="home" className="pb-10 relative">
             <Intro />
             <a className="flex flex-col items-center justify-center absolute bottom-16 right-0 left-0 m-auto z-20 max-w-min" href="#about">
