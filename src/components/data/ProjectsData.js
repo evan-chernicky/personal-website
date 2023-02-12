@@ -24,7 +24,7 @@ export const projects = [
             "AWS",
             "XD"
         ],
-        deployment: "https://hobotracks.herokuapp.com/",
+        deployment: "https://hobo-tracks.onrender.com/",
         github: "https://github.com/evan-chernicky/hobo-tracks",
         walkthrough: "https://www.youtube.com/watch?v=X4t8KVCbkYU",
         wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
