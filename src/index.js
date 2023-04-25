@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import {PageProvider} from './components/PageContext'
+import { Analytics } from '@vercel/analytics/react';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
       <PageProvider>
         <App />
+        <Analytics/>
       </PageProvider>
     </BrowserRouter>
   </React.StrictMode>
