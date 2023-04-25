@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Intro from './Intro.js'
 import Header from './Header.js'
 import Skills from './Skills.js'
