@@ -16,7 +16,7 @@ function Header() {
         <div className="z-10 flex flex-col text-center text-white">
         <div style={{maxWidth: '60%'}} className="m-auto opacity-0 text-focus-in">
           <h1 className="text-4xl mb-3">Hello, my name is <strong>Evan Chernicky</strong>.</h1>
-          <h2 className="text-2xl mb-6">I am a Washington, DC front-end developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.</h2>
+          <h2 className="text-2xl mb-6">I am a front-end developer with experience in JavaScript, React, Ruby, Ruby on Rails, and more.</h2>
           <div className="flex flex-row justify-center mb-6">
             <a className="px-1 hover:scale-95" target="_blank" rel="noreferrer" href="https://github.com/evan-chernicky">
               <img className="w-8" src={GitHub} alt="GitHub" />
