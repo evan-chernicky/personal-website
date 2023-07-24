@@ -80,8 +80,28 @@ function About() {
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Experience</h2>
                     <div className="max-w-2xl">
                     <div className="mb-10">
+                        <h3 className="text-2xl"><strong>Front-End Developer</strong> | Freelance</h3>
+                        <h4 className="text-lg mb-4">May 2022 - Jul 2023</h4>
+                        <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
+                          <li>Developer at a digital agency specializing in providing web expertise for manufacturers and distributors.</li>
+                          <li>Lead developer of a front-end team of 3 tasked with the creation of a dynamic and responsive web app. Use expertise in semantic HTML, SCSS, JS, and React to integrate web applications with Bloomreach CMS.</li>
+                          <li>Perform code reviews to ensure code quality and help to teach team members about best practices.</li>
+                          <li>Collaborate with the design team to ensure that web compositions are modular and conform to responsive design.</li>
+                          <li>Head search integration for Fortune 500 company specializing in construction materials using Lucidworks Fusion.</li>
+                          <li>Create web responsive components with interactive features in major redesign of petrochemical company website.</li>
+                        </ul>
+                      </div>
+                    <div className="mb-10">
                         <h3 className="text-2xl"><strong>Front-End Developer</strong> | Shift7 Digital</h3>
-                        <h4 className="text-lg mb-4">September 2022 - Present</h4>
+                        <h4 className="text-lg mb-4">Sept 2022 - Jul 2023</h4>
+                        <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
+                          <li>Developer at a digital agency specializing in providing web expertise for manufacturers and distributors.</li>
+                          <li>Lead developer of a front-end team of 3 tasked with the creation of a dynamic and responsive web app. Use expertise in semantic HTML, SCSS, JS, and React to integrate web applications with Bloomreach CMS.</li>
+                          <li>Perform code reviews to ensure code quality and help to teach team members about best practices.</li>
+                          <li>Collaborate with the design team to ensure that web compositions are modular and conform to responsive design.</li>
+                          <li>Head search integration for Fortune 500 company specializing in construction materials using Lucidworks Fusion.</li>
+                          <li>Create web responsive components with interactive features in major redesign of petrochemical company website.</li>
+                        </ul>
                       </div>
                       <div className="mb-10">
                         <h3 className="text-2xl"><strong>Creative Technologist</strong> | Model B</h3>
