@@ -48,39 +48,6 @@ export const projects = [
         wireframe: "https://xd.adobe.com/view/620099e6-7dbd-4fee-9a05-799b6aa00137-3753/"
     },
     {
-        name: "Model B",
-        summary: "Model B is a full-service advertising agency which integrates creativity and technology. For three years, I developed and managed over 65 distinctive and responsive websites for a wide range of businesses.",
-        image: ModelB,
-        tech: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "WordPress",
-            "Bootstrap",
-            "Foundation",
-            "SASS",
-            "XD",
-        ],
-        deployment: "https://www.modelb.com/",
-    },
-    {
-        name: "Personal Website",
-        summary: "Created and designed personal website. Built using React and Tailwind. Integrated EmailJS for email services.",
-        image: PersonalWebsite,
-        tech: [
-            "React",
-            "Tailwind",
-            "EmailJS",
-            "JavaScript",
-            "CSS",
-            "HTML",
-        ],
-        deployment: "https://evanchernicky.com/",
-        github: "https://github.com/evan-chernicky/personal-website",
-
-    },
-    {
         name: "Jeopardy Game Show",
         summary: "App allows users to interact with a Jeopardy game board to select questions based on a chosen category and answer trivia questions.",
         image: Jeopardy,
