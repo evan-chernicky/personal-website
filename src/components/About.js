@@ -83,12 +83,12 @@ function About() {
                         <h3 className="text-2xl"><strong>Front-End Developer</strong> | Freelance</h3>
                         <h4 className="text-lg mb-4">May 2022 - Jul 2023</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
-                          <li>Developer at a digital agency specializing in providing web expertise for manufacturers and distributors.</li>
-                          <li>Lead developer of a front-end team of 3 tasked with the creation of a dynamic and responsive web app. Use expertise in semantic HTML, SCSS, JS, and React to integrate web applications with Bloomreach CMS.</li>
-                          <li>Perform code reviews to ensure code quality and help to teach team members about best practices.</li>
-                          <li>Collaborate with the design team to ensure that web compositions are modular and conform to responsive design.</li>
-                          <li>Head search integration for Fortune 500 company specializing in construction materials using Lucidworks Fusion.</li>
-                          <li>Create web responsive components with interactive features in major redesign of petrochemical company website.</li>
+                          <li>Work with over 7 clients to build, design, and manage websites.</li>
+                          <li>Extensive experience in utilizing frameworks such as React/Next.js to build single-page applications (SPAs).</li>
+                          <li>Proficient in WordPress development, customizing themes, and creating custom plugins to extend website functionality, providing clients with scalable and tailored solutions for their specific needs</li>
+                          <li>Interact with clients in face-to-face meetings and phone calls to ensure product satisfaction.</li>
+                          <li>Uses technologies such as GSAP and Framer Motion to create fluid animations to create unique user experiences.</li>
+                          <li>Continuous learner, staying up-to-date with the latest front-end development trends, tools, and technologies, and applying this knowledge to improve development processes and outcomes.</li>
                         </ul>
                       </div>
                     <div className="mb-10">
