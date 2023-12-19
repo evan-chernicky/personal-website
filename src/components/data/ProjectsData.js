@@ -30,6 +30,20 @@ export const projects = [
         wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
     },
     {
+        name: "Nithya Raman",
+        summary: "Built site for LA City Councilmember Nithya Raman. Uses custom WordPress theme which allows non-technical users to create visually appealing pages using custom-built Gutenberg blocks. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to newsletters and update events.",
+        image: HoboTracks,
+        tech: [
+            "PHP",
+            "JavaScript",
+            "WordPress",
+            "Nationbuilder API",
+            "ACF Pro",
+            "Splide JS",
+        ],
+        deployment: "https://cd4.lacity.gov/",
+    },
+    {
         name: "Recycle Quest",
         summary: "Competed in 2.5 day hackathon (EcoHacks 2022). Collaborated with 3 person team to create app that allows companies and organizations to compete with each other by scanning barcodes of recycled items.",
         image: RecycleQuest,
