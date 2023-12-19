@@ -1,8 +1,8 @@
 import HoboTracks from '../../assets/projects/hobo-tracks.png'
-import ModelB from '../../assets/projects/model-b.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
-import PersonalWebsite from '../../assets/projects/personal-website.png'
 import RecycleQuest from '../../assets/projects/ecohacks.png'
+import NithyaRaman from '../../assets/projects/Nithya-Raman-homepage.png'
+
 
 
 
@@ -32,7 +32,7 @@ export const projects = [
     {
         name: "Nithya Raman",
         summary: "Built site for LA City Councilmember Nithya Raman. Uses custom WordPress theme which allows non-technical users to create visually appealing pages using custom-built Gutenberg blocks. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to newsletters and update events.",
-        image: HoboTracks,
+        image: NithyaRaman,
         tech: [
             "PHP",
             "JavaScript",
