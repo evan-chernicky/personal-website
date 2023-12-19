@@ -31,7 +31,7 @@ export const projects = [
     },
     {
         name: "Nithya Raman",
-        summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to newsletters and update events.",
+        summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to NB newsletters and update NB events.",
         image: NithyaRaman,
         tech: [
             "PHP",
