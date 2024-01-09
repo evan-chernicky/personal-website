@@ -71,7 +71,7 @@ function About() {
                         <p className="text-black dark:text-white mb-3">From my earliest memories, I have been captivated by stories. In 2005, I went to see the Space Shuttle take off and became curious about the motivation of an explorer risking their life to discover the last frontier. This same fascination led me daydream about adventures in faraway places, listen to podcasts about the rise and fall of the Roman empire, dive into the deep fictional lore of the Halo video game franchise, and occasionally even sketch out ideas for novels on sheets of papers. Years later, this same passion for storytelling would lead me to graduate with a degree from Denison University with a degree in Communication.</p>
                         <p className="text-black dark:text-white mb-8">Meanwhile, computers were always a fun tool for me to express myself. I created my first personal website on Weebly when I was in 8th grade, and remember being impressed to understand basic HTML. I later took an AP Java class in high school where I began to understand how far the programming rabbit hole went. While throughout college I helped my dad’s small business by managing his WordPress website, I never truly considered a career in web development until I started creating custom WordPress themes while working as an intern at an adverting agency called Model B.</p>
                         <p className="text-black dark:text-white mb-8">It was while I was at Model B, I discovered that I could help others create stories for companies to help sell their products using web development technologies. Advancing from intern, to Creative Technologist, and eventually to team manager, I learned the basics of the web, HTML, CSS, and JavaScript while also customizing WordPress templates with PHP.  After three years, I left to attend Flatiron School which helped me solidify my basics, expand my knowledge by learning React, Ruby, Rails, and SQL, and become more confident in my ability to create visually compelling stories for clients.</p>
-                        <p className="text-black dark:text-white mb-8">Today, I am excited to take my new skills and passion for both code and storytelling to the next chapter of my life working for Shift7 Digital.</p>
+                        <p className="text-black dark:text-white mb-8">Today, I am excited to take my new skills and passion for both code and storytelling to the next chapter of my life by helping companies and agnecies provide a unique and easy website experience for their customers.</p>
                     </div>
                 </div>
             </section>
@@ -80,8 +80,28 @@ function About() {
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Experience</h2>
                     <div className="max-w-2xl">
                     <div className="mb-10">
+                        <h3 className="text-2xl"><strong>Front-End Developer</strong> | Freelance</h3>
+                        <h4 className="text-lg mb-4">May 2022 - Jul 2023</h4>
+                        <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
+                          <li>Work with over 7 clients to build, design, and manage websites.</li>
+                          <li>Extensive experience in utilizing frameworks such as React/Next.js to build single-page applications (SPAs).</li>
+                          <li>Proficient in WordPress development, customizing themes, and creating custom plugins to extend website functionality, providing clients with scalable and tailored solutions for their specific needs</li>
+                          <li>Interact with clients in face-to-face meetings and phone calls to ensure product satisfaction.</li>
+                          <li>Uses technologies such as GSAP and Framer Motion to create fluid animations to create unique user experiences.</li>
+                          <li>Continuous learner, staying up-to-date with the latest front-end development trends, tools, and technologies, and applying this knowledge to improve development processes and outcomes.</li>
+                        </ul>
+                      </div>
+                    <div className="mb-10">
                         <h3 className="text-2xl"><strong>Front-End Developer</strong> | Shift7 Digital</h3>
-                        <h4 className="text-lg mb-4">September 2022 - Present</h4>
+                        <h4 className="text-lg mb-4">Sept 2022 - Jul 2023</h4>
+                        <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
+                          <li>Developer at a digital agency specializing in providing web expertise for manufacturers and distributors.</li>
+                          <li>Lead developer of a front-end team of 3 tasked with the creation of a dynamic and responsive web app. Use expertise in semantic HTML, SCSS, JS, and React to integrate web applications with Bloomreach CMS.</li>
+                          <li>Perform code reviews to ensure code quality and help to teach team members about best practices.</li>
+                          <li>Collaborate with the design team to ensure that web compositions are modular and conform to responsive design.</li>
+                          <li>Head search integration for Fortune 500 company specializing in construction materials using Lucidworks Fusion.</li>
+                          <li>Create web responsive components with interactive features in major redesign of petrochemical company website.</li>
+                        </ul>
                       </div>
                       <div className="mb-10">
                         <h3 className="text-2xl"><strong>Creative Technologist</strong> | Model B</h3>

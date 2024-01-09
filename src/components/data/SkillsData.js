@@ -24,6 +24,11 @@ import CSSWhite from '../../assets/skills/white/css-white.svg'
 import CSSBlack from '../../assets/skills/black/css-black.svg'
 import XDWhite from '../../assets/skills/white/xd-white.svg'
 import XDBlack from '../../assets/skills/black/xd-black.svg'
+import TSWhite from '../../assets/skills/white/Typescript-white.svg'
+import TSBlack from '../../assets/skills/black/Typescript-black.svg'
+import NextJSWhite from '../../assets/skills/white/Nextjs-white.svg'
+import NextJSBlack from '../../assets/skills/black/Nextjs-black.svg'
+
 
 export const skills = [
     {
@@ -32,9 +37,19 @@ export const skills = [
         imageBlack: JavascriptBlack
     },
     {
+        name: "TypeScript",
+        imageWhite: TSWhite,
+        imageBlack: TSBlack
+    },
+    {
         name: "React.js",
         imageWhite: ReactWhite,
         imageBlack: ReactBlack
+    },
+    {
+        name: "Next.js",
+        imageWhite: NextJSWhite,
+        imageBlack: NextJSBlack
     },
     {
         name: "Ruby",

@@ -1,8 +1,8 @@
 import HoboTracks from '../../assets/projects/hobo-tracks.png'
-import ModelB from '../../assets/projects/model-b.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
-import PersonalWebsite from '../../assets/projects/personal-website.png'
 import RecycleQuest from '../../assets/projects/ecohacks.png'
+import NithyaRaman from '../../assets/projects/Nithya-Raman-homepage.png'
+
 
 
 
@@ -30,6 +30,20 @@ export const projects = [
         wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
     },
     {
+        name: "Nithya Raman",
+        summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to NB newsletters and update NB events.",
+        image: NithyaRaman,
+        tech: [
+            "PHP",
+            "JavaScript",
+            "WordPress",
+            "Nationbuilder API",
+            "ACF Pro",
+            "Splide JS",
+        ],
+        deployment: "https://cd4.lacity.gov/",
+    },
+    {
         name: "Recycle Quest",
         summary: "Competed in 2.5 day hackathon (EcoHacks 2022). Collaborated with 3 person team to create app that allows companies and organizations to compete with each other by scanning barcodes of recycled items.",
         image: RecycleQuest,
@@ -46,39 +60,6 @@ export const projects = [
         github: "https://github.com/agubernikoff/ecohack",
         walkthrough: "https://www.youtube.com/watch?v=jAx4Gip3KZw",
         wireframe: "https://xd.adobe.com/view/620099e6-7dbd-4fee-9a05-799b6aa00137-3753/"
-    },
-    {
-        name: "Model B",
-        summary: "Model B is a full-service advertising agency which integrates creativity and technology. For three years, I developed and managed over 65 distinctive and responsive websites for a wide range of businesses.",
-        image: ModelB,
-        tech: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "WordPress",
-            "Bootstrap",
-            "Foundation",
-            "SASS",
-            "XD",
-        ],
-        deployment: "https://www.modelb.com/",
-    },
-    {
-        name: "Personal Website",
-        summary: "Created and designed personal website. Built using React and Tailwind. Integrated EmailJS for email services.",
-        image: PersonalWebsite,
-        tech: [
-            "React",
-            "Tailwind",
-            "EmailJS",
-            "JavaScript",
-            "CSS",
-            "HTML",
-        ],
-        deployment: "https://evanchernicky.com/",
-        github: "https://github.com/evan-chernicky/personal-website",
-
     },
     {
         name: "Jeopardy Game Show",
