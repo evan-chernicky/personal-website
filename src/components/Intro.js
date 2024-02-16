@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <div className="App-header h-screen flex flex-col justify-center items-center w-full h-screen">
-        <div className="w-full bg-no-repeat absolute bg-cover bg-center foam" style={{top: "-10vh", height: "120vh", backgroundSize: "200vh 121vh", backgroundImage: `url(${foam})`}}></div>
+        <div className="w-full bg-no-repeat absolute bg-cover bg-center foam scale-in scale-0" style={{top: "-10vh", height: "120vh", backgroundSize: "200vh 121vh", backgroundImage: `url(${foam})`}}></div>
         <div className="z-10 flex flex-col text-center text-white">
         <div style={{maxWidth: '60%'}} className="m-auto opacity-0 text-focus-in">
           <h1 className="text-4xl mb-3">Hello, my name is <strong>Evan Chernicky</strong>.</h1>

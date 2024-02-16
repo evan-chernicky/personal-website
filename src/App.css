@@ -124,6 +124,29 @@ body {
             animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   }
 
+  .visible .scale-in  {
+    -webkit-animation: scale-in 0.4s ease-out forwards;
+            animation: scale-in 0.4s ease-out forwards;
+  }
+
+  @-webkit-keyframes scale-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1)
+    }
+  }
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1)
+    }
+  }
+
   @-webkit-keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
