@@ -2,11 +2,7 @@ import HoboTracks from '../../assets/projects/hobo-tracks.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
 import RecycleQuest from '../../assets/projects/ecohacks.png'
 import NithyaRaman from '../../assets/projects/Nithya-Raman-homepage.png'
-
-
-
-
-
+import SFVX from '../../assets/projects/SFVX.gif'
 
 export const projects = [
     {
@@ -42,6 +38,18 @@ export const projects = [
             "Splide JS",
         ],
         deployment: "https://cd4.lacity.gov/",
+    },
+    {
+        name: "Skyefox Ventures",
+        summary: "Created site for New York based digital marketing company. Uses custom GSAP animations.",
+        image: SFVX,
+        tech: [
+            "Webflow",
+            "JavaScript",
+            "GSAP",
+            "Lenis",
+        ],
+        deployment: "https://www.skyefoxventures.com/",
     },
     {
         name: "Recycle Quest",
