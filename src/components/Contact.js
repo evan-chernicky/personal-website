@@ -10,6 +10,8 @@ function Contact({isDarkMode}) {
 const [isEmailSent, setIsEmailSent] = useState(false)
 const fadeIn = isEmailSent ? "opacity-100" : "opacity-0"
 
+console.log(process.env.REACT_APP_EMAIL_JS_SERVICE_ID)
+
 function handleSubmit(e) {
     e.preventDefault()
 
