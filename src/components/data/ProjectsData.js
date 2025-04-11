@@ -25,27 +25,6 @@ export const projects = [
         deployment: "https://lilliputplayhomes.com/",
     },
     {
-        name: "HoboTracks",
-        summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
-        projectType: "Personal",
-        image: HoboTracks,
-        tech: [
-            "Rails",
-            "Ruby",
-            "JavaScript",
-            "React",
-            "PostgreSQL",
-            "Google Maps API",
-            "Tailwind",
-            "AWS",
-            "XD"
-        ],
-        deployment: "https://hobo-tracks.com/",
-        github: "https://github.com/evan-chernicky/hobo-tracks",
-        walkthrough: "https://www.youtube.com/watch?v=X4t8KVCbkYU",
-        wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
-    },
-    {
         name: "Nithya Raman",
         summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to NB newsletters and update NB events.",
         projectType: "Professional",
@@ -72,6 +51,27 @@ export const projects = [
             "Lenis",
         ],
         deployment: "https://www.skyefoxventures.com/",
+    },
+    {
+        name: "HoboTracks",
+        summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
+        projectType: "Personal",
+        image: HoboTracks,
+        tech: [
+            "Rails",
+            "Ruby",
+            "JavaScript",
+            "React",
+            "PostgreSQL",
+            "Google Maps API",
+            "Tailwind",
+            "AWS",
+            "XD"
+        ],
+        deployment: "https://hobo-tracks.com/",
+        github: "https://github.com/evan-chernicky/hobo-tracks",
+        walkthrough: "https://www.youtube.com/watch?v=X4t8KVCbkYU",
+        wireframe: "https://xd.adobe.com/view/1d53b445-b557-4d10-8bfe-dc95ff8388b7-4800/"
     },
     {
         name: "Recycle Quest",
