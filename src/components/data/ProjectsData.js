@@ -8,6 +8,7 @@ export const projects = [
     {
         name: "HoboTracks",
         summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
+        projectType: "Personal",
         image: HoboTracks,
         tech: [
             "Rails",
@@ -28,6 +29,7 @@ export const projects = [
     {
         name: "Nithya Raman",
         summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to NB newsletters and update NB events.",
+        projectType: "Professional",
         image: NithyaRaman,
         tech: [
             "PHP",
@@ -42,6 +44,7 @@ export const projects = [
     {
         name: "Skyefox Ventures",
         summary: "Created site for New York based digital marketing company. Uses custom GSAP animations.",
+        projectType: "Professional",
         image: SFVX,
         tech: [
             "Webflow",
@@ -54,6 +57,7 @@ export const projects = [
     {
         name: "Recycle Quest",
         summary: "Competed in 2.5 day hackathon (EcoHacks 2022). Collaborated with 3 person team to create app that allows companies and organizations to compete with each other by scanning barcodes of recycled items.",
+        projectType: "Personal",
         image: RecycleQuest,
         tech: [
             "Rails",
@@ -72,6 +76,7 @@ export const projects = [
     {
         name: "Jeopardy Game Show",
         summary: "App allows users to interact with a Jeopardy game board to select questions based on a chosen category and answer trivia questions.",
+        projectType: "Personal",
         image: Jeopardy,
         tech: [
             "HTML",

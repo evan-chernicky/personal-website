@@ -1,23 +1,29 @@
 
-import React from 'react'
-import Project from './Project'
+import React, {useState} from 'react'
 import {projects} from "./data/ProjectsData.js"
+import Project from './Project'
+import SingleFilter from './SingleFilter'
 import DownArrowBlack from '../assets/down-arrow-black.svg'
 import DownArrowWhite from '../assets/down-arrow-white.svg'
 
-
 function Projects({isDarkMode}) {
+
+  const [currentFilter, setCurrentFilter] = useState('All')
+
+  const projectTypes = ['All', ...[...new Set(projects.map(project => project.projectType))]];
+
   return (
     <div className="min-h-screen p-6 max-w-screen-xl m-auto flex flex-col items-center">
         <h2 className="mb-8 text-center text-black dark:text-white text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Projects</h2>
-        <div className="flex align-center justify-center">
-          <button>All</button>
-          <button>Professional</button>
-          <button>Personal</button>
+        <div className="flex align-center justify-center gap-2 text-white mb-3">
+          {
+              projectTypes.map((projectType, index) => {
+                return <SingleFilter key={projectType} projectType={projectType} currentFilter={currentFilter} setCurrentFilter={setCurrentFilter}/> 
+            })
+          }
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 fade-in-bottom opacity-0">
-            {projects.map(project => {
-                    const index = projects.indexOf(project)
+            {projects.map((project, index) => {
                     return <Project key={index} index={index} project={project} isDarkMode={isDarkMode}/> 
                 })
             }
