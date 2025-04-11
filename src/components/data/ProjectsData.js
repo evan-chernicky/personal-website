@@ -3,8 +3,27 @@ import Jeopardy from '../../assets/projects/jeopardy.png'
 import RecycleQuest from '../../assets/projects/ecohacks.png'
 import NithyaRaman from '../../assets/projects/Nithya-Raman-homepage.png'
 import SFVX from '../../assets/projects/SFVX.gif'
+import Lilliput from '../../assets/projects/lilliput-screengrab.gif'
+
 
 export const projects = [
+    {
+        name: "Lilliput Play Homes",
+        summary: "Designed and developed elegant and interactive ecommerce website for client creating bespoke luxury children's playhouses.",
+        projectType: "Professional",
+        image: Lilliput,
+        tech: [
+            "JavaScript",
+            "PHP",
+            "WordPress",
+            "Green Sock",
+            "Ecommerce",
+            "Google Maps API",
+            "Tailwind",
+            "XD"
+        ],
+        deployment: "https://lilliputplayhomes.com/",
+    },
     {
         name: "HoboTracks",
         summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
