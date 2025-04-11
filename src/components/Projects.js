@@ -17,13 +17,14 @@ function Projects({isDarkMode}) {
         <h2 className="mb-8 text-center text-black dark:text-white text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Projects</h2>
         <div className="flex align-center justify-center gap-2 dark:text-white text-black mb-3">
           {
-              projectTypes.map((projectType, index) => {
+              projectTypes.map((projectType) => {
                 return <SingleFilter key={projectType} projectType={projectType} currentFilter={currentFilter} setCurrentFilter={setCurrentFilter}/> 
             })
           }
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 fade-in-bottom opacity-0">
             {projects.map((project, index) => {
+                    if ((currentFilter !== 'All' && currentFilter !== project.projectType)) return null
                     return <Project key={index} index={index} project={project} isDarkMode={isDarkMode}/> 
                 })
             }
