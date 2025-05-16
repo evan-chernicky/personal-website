@@ -24,8 +24,7 @@ function Projects({isDarkMode}) {
         </div>
         <div className="grid xl:grid-cols-3 lg:grid-cols-2 fade-in-bottom opacity-0">
             {projects.map((project, index) => {
-                    if ((currentFilter !== 'All' && currentFilter !== project.projectType)) return null
-                    return <Project key={index} index={index} project={project} isDarkMode={isDarkMode}/> 
+                    return <Project key={project.name} index={index} project={project} isDarkMode={isDarkMode}/> 
                 })
             }
         </div>

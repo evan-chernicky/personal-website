@@ -182,7 +182,7 @@ function About() {
                         <h3 className="text-2xl"><strong>Denison Unviersity</strong> | B.A. Communication</h3>
                         <h4 className="text-lg mb-4">Aug 2014 - May 2018</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
-                          <li>Lambda Pi Eta (National Communication Honrary Society)</li>
+                          <li>Lambda Pi Eta (National Communication Honorary Society)</li>
                           <li>Denison Campus Governance Association Senator</li>
                           <li>CIEE Study Abroad Student - Universidade Nova de Lisboa (Feb - May 2017)</li>
                           <li>Beta Theta Pi Member/Chapter Historian</li>
