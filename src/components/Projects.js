@@ -15,7 +15,7 @@ function Projects({isDarkMode}) {
   return (
     <div className="min-h-screen p-6 max-w-screen-xl m-auto flex flex-col items-center">
         <h2 className="mb-8 text-center text-black dark:text-white text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Projects</h2>
-        <div className="flex align-center justify-center gap-2 dark:text-white text-black mb-3">
+        <div className="flex align-center justify-center gap-2 dark:text-white text-black mb-3 fade-in-bottom opacity-0">
           {
               projectTypes.map((projectType) => {
                 return <SingleFilter key={projectType} projectType={projectType} currentFilter={currentFilter} setCurrentFilter={setCurrentFilter}/> 
