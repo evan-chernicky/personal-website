@@ -81,7 +81,7 @@ function About() {
                     <div className="max-w-2xl">
                     <div className="mb-10">
                         <h3 className="text-2xl"><strong>Front-End Developer</strong> | Freelance</h3>
-                        <h4 className="text-lg mb-4">May 2022 - Jul 2023</h4>
+                        <h4 className="text-lg mb-4">May 2022 - Present</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Work with over 7 clients to build, design, and manage websites.</li>
                           <li>Extensive experience in utilizing frameworks such as React/Next.js to build single-page applications (SPAs).</li>
