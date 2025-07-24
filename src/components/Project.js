@@ -1,5 +1,16 @@
 import React from 'react'
 
+function getMimeType(filename) {
+  const ext = filename.split('.').pop().toLowerCase();
+  const map = {
+    jpg: 'image/jpeg',
+    png: 'image/png',
+    mp4: 'video/mp4',
+  };
+  return map[ext] || 'application/octet-stream';
+};
+
+
 function Project({project, index}) {
 
     const isEven = (index % 2 === 0 || index === 0) ? true : false
@@ -13,7 +24,14 @@ function Project({project, index}) {
                 {project.walkthrough ? <a className="hover:underline text-white font-bold text-2xl" target="_blank" rel="noreferrer" href={project.walkthrough}>Walkthrough</a> : null}
                 {project.wireframe ? <a className="hover:underline text-white font-bold text-2xl" target="_blank" rel="noreferrer" href={project.wireframe}>Wireframe</a> : null}
             </div>
-            <img className="rounded-t-2xl" src={project.image} alt={project.name} />
+            {getMimeType(project.media) === 'video/mp4' ? 
+            <video className="rounded-t-2xl"  autoPlay loop muted>
+                <source src={project.media} type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video> 
+            : 
+            <img className="rounded-t-2xl" src={project.media} alt={project.name} /> 
+            }
         </div>
         <div className="px-7 md:px-10 py-8 bg-white dark:bg-black mb-9">
             <h2 className="text-black text-3xl font-bold mb-2 dark:text-white">{project.name}</h2>

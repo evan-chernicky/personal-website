@@ -1,7 +1,7 @@
 import HoboTracks from '../../assets/projects/hobo-tracks.png'
 import Jeopardy from '../../assets/projects/jeopardy.png'
 import RecycleQuest from '../../assets/projects/ecohacks.png'
-import NithyaRaman from '../../assets/projects/Nithya-Raman-homepage.png'
+import NithyaRaman from '../../assets/projects/nithya-raman.mp4'
 import SFVX from '../../assets/projects/SFVX.gif'
 import Lilliput from '../../assets/projects/lilliput-screengrab.gif'
 
@@ -11,7 +11,7 @@ export const projects = [
         name: "Lilliput Play Homes",
         summary: "Designed and developed elegant and interactive ecommerce website for client creating bespoke luxury children's playhouses.",
         projectType: "Professional",
-        image: Lilliput,
+        media: Lilliput,
         tech: [
             "JavaScript",
             "PHP",
@@ -28,7 +28,7 @@ export const projects = [
         name: "Nithya Raman",
         summary: "Built site for LA City Councilmember Nithya Raman. Features custom Wordpress <-> Nationbuilder API integration which allows users to be added to NB newsletters and update NB events.",
         projectType: "Professional",
-        image: NithyaRaman,
+        media: NithyaRaman,
         tech: [
             "PHP",
             "JavaScript",
@@ -43,7 +43,7 @@ export const projects = [
         name: "Skyefox Ventures",
         summary: "Created site for New York based digital marketing company. Uses custom GSAP animations.",
         projectType: "Professional",
-        image: SFVX,
+        media: SFVX,
         tech: [
             "Webflow",
             "JavaScript",
@@ -56,7 +56,7 @@ export const projects = [
         name: "HoboTracks",
         summary: "Created HoboTracks which allows users to create a personal journal of a trip, follow other travelers' journeys, and see what messages they left behind all over the globe.",
         projectType: "Personal",
-        image: HoboTracks,
+        media: HoboTracks,
         tech: [
             "Rails",
             "Ruby",
@@ -77,7 +77,7 @@ export const projects = [
         name: "Recycle Quest",
         summary: "Competed in 2.5 day hackathon (EcoHacks 2022). Collaborated with 3 person team to create app that allows companies and organizations to compete with each other by scanning barcodes of recycled items.",
         projectType: "Personal",
-        image: RecycleQuest,
+        media: RecycleQuest,
         tech: [
             "Rails",
             "Ruby",
@@ -96,7 +96,7 @@ export const projects = [
         name: "Jeopardy Game Show",
         summary: "App allows users to interact with a Jeopardy game board to select questions based on a chosen category and answer trivia questions.",
         projectType: "Personal",
-        image: Jeopardy,
+        media: Jeopardy,
         tech: [
             "HTML",
             "CSS",
