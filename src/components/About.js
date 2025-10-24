@@ -80,10 +80,10 @@ function About() {
                     <h2 style={{animationDelay: ".6s"}} className="mb-8 text-6xl uppercase tracking-wider tracking-in-expand opacity-0">Experience</h2>
                     <div className="max-w-2xl">
                     <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Front-End Developer</strong> | Freelance</h3>
+                        <h3 className="text-2xl"><strong>Web Developer / Owner</strong> | <a className="underline hover:no-underline" href="https://pigeonwirecreative.com/" rel="noopener" target="_blank">Pigeonwire</a></h3>
                         <h4 className="text-lg mb-4">May 2022 - Present</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
-                          <li>Work with over 7 clients to build, design, and manage websites.</li>
+                          <li>Work with clients to build, design, and manage websites.</li>
                           <li>Extensive experience in utilizing frameworks such as React/Next.js to build single-page applications (SPAs).</li>
                           <li>Proficient in WordPress development, customizing themes, and creating custom plugins to extend website functionality, providing clients with scalable and tailored solutions for their specific needs</li>
                           <li>Interact with clients in face-to-face meetings and phone calls to ensure product satisfaction.</li>
@@ -92,7 +92,7 @@ function About() {
                         </ul>
                       </div>
                     <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Front-End Developer</strong> | Shift7 Digital</h3>
+                        <h3 className="text-2xl"><strong>Front-End Developer</strong> | <a className="underline hover:no-underline" href="https://www.merkle.com/en/about-us/shift7.html" rel="noopener" target="_blank">Shift7 Digital</a></h3>
                         <h4 className="text-lg mb-4">Sept 2022 - Jul 2023</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Developer at a digital agency specializing in providing web expertise for manufacturers and distributors.</li>
@@ -104,7 +104,7 @@ function About() {
                         </ul>
                       </div>
                       <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Creative Technologist</strong> | Model B</h3>
+                        <h3 className="text-2xl"><strong>Creative Technologist</strong> | <a className="underline hover:no-underline" href="https://modelb.com/" rel="noopener" target="_blank">Model B</a></h3>
                         <h4 className="text-lg mb-4">May 2019 - Nov 2021</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Headed web department at a tech startup. Managed team of two and several contractors in creating web solutions.</li>
@@ -118,7 +118,7 @@ function About() {
                         </ul>
                       </div>
                       <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Special Projects/ Media</strong> | Lilliput Play Homes</h3>
+                        <h3 className="text-2xl"><strong>Special Projects/ Media</strong> | <a className="underline hover:no-underline" href="https://lilliputplayhomes.com/" rel="noopener" target="_blank">Lilliput Play Homes</a></h3>
                         <h4 className="text-lg mb-4">May 2010 - Present <i className="text-sm">(Part-time)</i></h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Manage, design, and edit official WordPress websites. Collaborate with leadership to implement features.</li>
@@ -128,7 +128,7 @@ function About() {
                         </ul>
                       </div>
                       <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Business Development Coordinator</strong> | RealClear Media Group</h3>
+                        <h3 className="text-2xl"><strong>Business Development Coordinator</strong> |  <a className="underline hover:no-underline" href="https://www.realclearmediagroup.com/" rel="noopener" target="_blank">RealClear Media Group</a></h3>
                         <h4 className="text-lg mb-4">Jul 2018 - Nov 2018</h4>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Tracked legislative issues and provide updates to team weekly.</li>
@@ -141,17 +141,17 @@ function About() {
                         </ul>
                       </div>
                       <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Winter Internship</strong> | Higher Images Inc.</h3>
+                        <h3 className="text-2xl"><strong>Winter Internship</strong> | <a className="underline hover:no-underline" href="https://www.higherimages.com/" rel="noopener" target="_blank">Higher Images Inc.</a></h3>
                         <h4 className="text-lg mb-4">Jan 2018</h4>
                         <p className="space-y-1">
                           Interned for Google Partnered marketing firm that specializes in online commercial marketing including search engine optimization (SEO), AdWords, website design, and social media management. Wrote Business Highlights for the Pittsburgh Business Show.
                         </p>
                       </div>
                       <div className="mb-10">
-                        <h3 className="text-2xl"><strong>Utopia 500 Project - US Intern</strong> | Universidade do Porto</h3>
+                        <h3 className="text-2xl"><strong>US Intern</strong> | <a className="underline hover:no-underline" href="https://www.utopia500.net/" rel="noopener"  target="_blank">Utopia 500 Project - Universidade do Porto</a> </h3>
                         <h4 className="text-lg mb-4">Jan 2018</h4>
                         <p className="mb-4">
-                          Worked as sole U.S. member of an international team of interns helping to create, edit, and manage news entries for a non-governmental organization seeking to promote peace and inspire innovation in science and technology.
+                          Worked as sole U.S. member of an international team of interns helping to create, edit, and manage news entries for a NGO seeking to promote peace and inspire innovation in science and technology.
                         </p>
                         <ul className="list-disc space-y-1 dark:marker:text-blue marker:text-pink">
                           <li>Organized Multiculturalism Day, a day where hundreds of kids from Valongo, Portugal gathered to learn about other cultures.</li>
